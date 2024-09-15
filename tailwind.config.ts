@@ -9,8 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'neutralDark': "#121717",
+        'neutralLight-300': "#CECFD1",
+        'neutralLight-100': "#EBEBEC",
+      },
+      backgroundImage: {
+        // 'pattern-stripes': 'repeating-linear-gradient(135deg, transparent, transparent 10px,rgba(0,0,0,0.1) 10px,rgba(0,0,0,0.1) 20px)',
+        'pattern-stripes': 'repeating-linear-gradient(135deg, transparent, transparent 10px, rgba(18, 23, 23,0.3) 10px, rgba(18, 23, 23,0.3) 13px)',
       },
     },
   },

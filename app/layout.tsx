@@ -1,16 +1,35 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar/Navbar";
+import Footer from "./components/Footer/Footer";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["600", "700"],
+  variable: "--font-montserrat",
+  display: "swap",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const panameraLight = localFont({
+  src: "./fonts/Panamera-Light.otf",
+  variable: "--font-panamera-light",
+});
+
+const panameraRegular = localFont({
+  src: "./fonts/Panamera-Regular.otf",
+  variable: "--font-panamera-regular",
+});
+
+const panameraMedium = localFont({
+  src: "./fonts/Panamera-Medium.otf",
+  variable: "--font-panamera-medium",
+});
+
+const panameraBold = localFont({
+  src: "./fonts/Panamera-Bold.otf",
+  variable: "--font-panamera-bold",
 });
 
 export const metadata: Metadata = {
@@ -26,9 +45,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${panameraLight.variable} ${panameraRegular.variable} ${panameraMedium.variable} ${panameraBold.variable} ${montserrat.variable} antialiased flex flex-col items-stretch min-h-screen bg-neutralLight-100`}
+        // className={`${panameraRegular.className} antialiased`}
       >
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
