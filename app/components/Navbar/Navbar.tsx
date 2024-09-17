@@ -10,8 +10,10 @@ const Navbar = () => {
   // PROX PASSO AQUI: ver se fica bom sublinhar o link corrente com o mesmo tom de amarelo de Projects
   // (de repente fazendo um rabiscado no ffflux)
 
+  //to-do: trocar largura maxima
+
   return (
-    <nav className="h-[90px] text-xl mb-1 py-6 px-16 max-lg-sticky top-0 flex gap-8 justify-between items-center ">
+    <nav className="h-[90px] w-full max-w-[1440px] mx-auto text-xl mb-1 py-6 px-16 max-lg-sticky top-0 flex gap-8 justify-between items-center">
       <div className="flex gap-3 items-center">
         <Image
           src={'images/venn-logo2.svg'}
