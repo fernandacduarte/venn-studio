@@ -4,10 +4,11 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import Image from "next/image";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["600", "700"],
+  weight: ["700", "900"],
   variable: "--font-montserrat",
   display: "swap",
 });
@@ -45,12 +46,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${panameraLight.variable} ${panameraRegular.variable} ${panameraMedium.variable} ${panameraBold.variable} ${montserrat.variable} antialiased flex flex-col items-stretch min-h-screen bg-neutralLight-100`}
+        className={`${panameraLight.variable} ${panameraRegular.variable} ${panameraMedium.variable} ${panameraBold.variable} ${montserrat.variable} antialiased flex flex-col items-stretch min-h-screen bg-neutralLight-100 relative`}
         // className={`${panameraRegular.className} antialiased`}
       >
         <Navbar />
         {children}
         <Footer />
+        {/* <div className="absolute top-0 left-0 z-[-1] h-full w-full overflow-hidden blur-[30px]">
+          <Image
+            // className="rotate-180 opacity-60"
+            className="rotate-90 opacity-50"
+            src="images/circles-desktop7.svg"
+            alt="About us"
+            width={1440}
+            height={800}
+            priority
+          />
+        </div> */}
       </body>
     </html>
   );

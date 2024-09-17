@@ -2,7 +2,6 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Team from "./components/Team/Team";
 import Contact from "./components/Contact/Contact";
-import { usePathname } from "next/navigation";
 
 export default function Home() {
   return (
