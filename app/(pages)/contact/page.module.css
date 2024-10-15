@@ -1,0 +1,38 @@
+.button:hover {
+  cursor: pointer;
+  background-color: hsl(77, 76%, 65%);
+  color: #121717;
+  transition: all 0.3s ease;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.email__highlight {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.email__highlight:hover::before {
+  height: 44px;
+}
+
+.email__highlight::before {
+  z-index: -1;
+  height: 8px;
+  width: calc(100% + 12px);
+  content: "";
+  position: absolute;
+  left: -5px;
+  bottom: -5px;
+  background-color: hsl(77, 76%, 65%);
+  transform: skew(-20deg);
+  border-radius: 2px;
+  transform-origin: center;
+  transition: all 0.3s ease;
+}
+  

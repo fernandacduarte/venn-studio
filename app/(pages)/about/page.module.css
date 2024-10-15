@@ -1,0 +1,46 @@
+.intro__highlight {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.intro__highlight::before {
+  height: 2.3rem;
+  width: calc(100% + 8px);
+  content: "";
+  position: absolute;
+  left: -2px;
+  top: 8px;
+  background-color: hsl(77, 76%, 74%);
+  /* opacity: 80%; */
+  transform: skew(-20deg);
+  border-radius: 2px;
+  transform-origin: center;
+  z-index: -1;
+}
+
+.contact__highlight {
+  cursor: pointer;
+  position: relative;
+  /* display: inline-block; */
+  z-index: 1;
+}
+
+.contact__highlight::before {
+  height: 8px;
+  width: calc(100% + 8px);
+  content: "";
+  position: absolute;
+  left: -4px;
+  bottom: -5px;
+  background-color: hsl(77, 76%, 65%);
+  transform: skew(-20deg);
+  border-radius: 2px;
+  transform-origin: center;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.contact__highlight:hover::before {
+  height: 44px;
+}

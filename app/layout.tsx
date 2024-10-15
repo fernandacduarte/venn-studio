@@ -1,36 +1,50 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
-import { Montserrat } from "next/font/google";
+// import localFont from "next/font/local";
+import { Montserrat, Raleway } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["700", "900"],
+  weight: ["900"],
   variable: "--font-montserrat",
   display: "swap",
 });
 
-const panameraLight = localFont({
-  src: "./fonts/Panamera-Light.otf",
-  variable: "--font-panamera-light",
+// const poppins = Poppins({
+//   subsets: ["latin"],
+//   weight: ["400", "500", "600", "700", "800", "900"],
+//   variable: "--font-poppins",
+//   display: "swap",
+// });
+
+const raleway = Raleway({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+  variable: "--font-raleway",
+  display: "swap",
 });
 
-const panameraRegular = localFont({
-  src: "./fonts/Panamera-Regular.otf",
-  variable: "--font-panamera-regular",
-});
+// const panameraLight = localFont({
+//   src: "./fonts/Panamera-Light.otf",
+//   variable: "--font-panamera-light",
+// });
 
-const panameraMedium = localFont({
-  src: "./fonts/Panamera-Medium.otf",
-  variable: "--font-panamera-medium",
-});
+// const panameraRegular = localFont({
+//   src: "./fonts/Panamera-Regular.otf",
+//   variable: "--font-panamera-regular",
+// });
 
-const panameraBold = localFont({
-  src: "./fonts/Panamera-Bold.otf",
-  variable: "--font-panamera-bold",
-});
+// const panameraMedium = localFont({
+//   src: "./fonts/Panamera-Medium.otf",
+//   variable: "--font-panamera-medium",
+// });
+
+// const panameraBold = localFont({
+//   src: "./fonts/Panamera-Bold.otf",
+//   variable: "--font-panamera-bold",
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -45,7 +59,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${panameraLight.variable} ${panameraRegular.variable} ${panameraMedium.variable} ${panameraBold.variable} ${montserrat.variable} antialiased flex flex-col items-stretch min-h-screen bg-neutralLight-100 relative`}
+        // className={`${panameraLight.variable} ${panameraRegular.variable} ${panameraMedium.variable} ${panameraBold.variable} ${montserrat.variable} ${poppins.variable} antialiased flex flex-col items-stretch min-h-screen bg-neutralLight-100 relative`}
+        // className={`${poppins.variable} antialiased flex flex-col items-stretch min-h-screen bg-neutralLight-100 relative`}
+        className={`${raleway.variable} ${montserrat.variable} font-[family-name:var(--font-raleway)] antialiased flex flex-col items-stretch min-h-screen bg-neutralLight-100 relative`}
         // className={`${panameraRegular.className} antialiased`}
       >
         <Navbar />

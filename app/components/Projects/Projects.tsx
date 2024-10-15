@@ -22,19 +22,21 @@ const Projects = () => {
       <Link href="/projects">
         <div className="h-full flex flex-col justify-between text-neutralDark">
           <div className="flex justify-between items-start">
-            <div className="font-[family-name:var(--font-panamera-medium)] flex flex-col gap-3">
+            {/* <div className="font-[family-name:var(--font-panamera-medium)] flex flex-col gap-3"> */}
+            <div className="font-medium flex flex-col gap-3">
               <span className="tracking-[0.07em]">SEE OUR WORK</span>
               {/* <span className="text-[3.5rem] leading-[4rem] w-full max-w-[20ch] tracking-[0.04em]">We are a <br />Web Development Studio</span> */}
-              <span className="text-3xl w-full max-w-[20ch] tracking-[0.03em]">Take a loot at our work in progress and completed projects</span>
+              <span className="text-3xl w-full max-w-[22ch] tracking-[0.03em] leading-[2.7rem]">Take a loot at our work in progress and completed projects</span>
             </div>
-            <div className="h-full mt-[-16px] ">
+            <div className="h-full">
               <div className="rounded-full bg-neutralDark flex justify-center items-center rotate-45">
                 <IconArrowUpRight size={64} strokeWidth={1} color={'hsl(77, 76%, 74%)'}/>
               </div>
             </div>
           </div>
           <div className="w-full flex justify-end items-end">
-            <span className="relative font-[family-name:var(--font-panamera-medium)] text-5xl">Projects</span>
+            {/* <span className="relative font-[family-name:var(--font-panamera-medium)] text-5xl">Projects</span> */}
+            <span className="font-medium text-5xl">Projects</span>
           </div>
         </div>
       </Link>

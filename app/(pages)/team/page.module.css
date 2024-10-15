@@ -1,0 +1,18 @@
+.contact__highlight {
+  position: relative;
+  /* display: inline-block; */
+}
+
+.contact__highlight::before {
+  height: 8px;
+  width: 100%;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  background-color: hsl(77, 76%, 65%);
+  transform: skew(-20deg);
+  border-radius: 2px;
+  transform-origin: center;
+}
+  
