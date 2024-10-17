@@ -30,7 +30,7 @@ const About = () => {
             <div className="font-medium flex flex-col gap-2">
               <span className="tracking-[0.07em]">ABOUT US</span>
               {/* <span className="text-[3.5rem] leading-[4rem] w-full max-w-[20ch] tracking-[0.04em]">We are a <br />Web Development Studio</span> */}
-              <span className="text-6xl font-medium leading-[4.5rem] w-full max-w-[20ch] tracking-[0.03em]">We are a Web Development Studio</span>
+              <span className="text-[3.75rem] font-medium leading-[4.5rem] w-full max-w-[20ch] tracking-[0.03em]">We are a Web Development Studio</span>
             </div>
             <div className="h-full mt-[-16px]">
               <IconArrowUpRight size={80} strokeWidth={1} />

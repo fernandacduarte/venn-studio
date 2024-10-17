@@ -5,7 +5,7 @@ import styles from './page.module.css'
 
 const ProjectsPage = () => {
   return (
-    <div className="animate-fadeIn w-full px-16 flex gap-6 flex-grow items-stretch">
+    <div className="animate-fadeIn w-full px-16 lg:px-fluid-16-64 flex gap-6 flex-grow items-stretch">
       <div className="h-full w-full flex flex-col gap-14 flex-grow text-neutralDark mt-12">
         {/* <Link href="/"><div className="w-full flex gap-2 opacity-70"><IconArrowLeft strokeWidth={1.2}/><span className="">Home</span></div></Link> */}
         {/* <div>

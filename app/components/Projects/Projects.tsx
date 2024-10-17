@@ -26,7 +26,7 @@ const Projects = () => {
             <div className="font-medium flex flex-col gap-3">
               <span className="tracking-[0.07em]">SEE OUR WORK</span>
               {/* <span className="text-[3.5rem] leading-[4rem] w-full max-w-[20ch] tracking-[0.04em]">We are a <br />Web Development Studio</span> */}
-              <span className="text-3xl w-full max-w-[22ch] tracking-[0.03em] leading-[2.7rem]">Take a loot at our work in progress and completed projects</span>
+              <span className="text-3xl w-full max-w-[22ch] tracking-[0.03em] leading-[2.7rem]">Take a loot at our work in progress and latest projects</span>
             </div>
             <div className="h-full">
               <div className="rounded-full bg-neutralDark flex justify-center items-center rotate-45">

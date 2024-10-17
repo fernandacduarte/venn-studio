@@ -3,7 +3,7 @@
 
 const ProjectsPage = () => {
   return (
-    <div className="relative animate-fadeIn w-full px-16 flex gap-6 flex-grow items-stretch">
+    <div className="relative animate-fadeIn w-full px-16 lg:px-fluid-16-64 flex gap-6 flex-grow items-stretch">
       <div className="h-full w-full flex flex-col gap-14 flex-grow text-neutralDark mt-12">
         {/* <Link href="/"><div className="w-full flex gap-2 opacity-70"><IconArrowLeft strokeWidth={1.2}/><span className="">Home</span></div></Link> */}
         {/* <div>
@@ -12,10 +12,11 @@ const ProjectsPage = () => {
         <div>
           <span className="text-4xl font-extrabold">Latest projects</span>
         </div>
-        <div className="animate-pulse w-full h-full flex flex-row justify-between flex-wrap gap-14 opacity-[40%]">
-          <div className="bg-neutralDark rounded-3xl w-[25rem] h-[25rem]"></div>
-          <div className="bg-neutralDark rounded-3xl w-[25rem] h-[25rem]"></div>
-          <div className="bg-neutralDark rounded-3xl w-[25rem] h-[25rem]"></div>
+        {/* <div className="animate-pulse w-full h-full flex flex-row justify-between flex-wrap gap-14 opacity-[40%]"> */}
+        <div className="animate-pulse w-full h-full flex flex-row justify-between gap-14 opacity-[40%]">
+          <div className="bg-neutralDark rounded-3xl w-1/3 h-[25rem]"></div>
+          <div className="bg-neutralDark rounded-3xl w-1/3 h-[25rem]"></div>
+          <div className="bg-neutralDark rounded-3xl w-1/3 h-[25rem]"></div>
           {/* <div className="bg-neutralDark rounded-3xl w-[24rem] h-[24rem]"></div> */}
         </div>
         <div className="z-20 absolute top-[50%] left-0 flex justify-center items-center text-4xl font-bold bg-highlight p-8 w-screen opacity-70">
