@@ -1,4 +1,4 @@
-import { IconArrowLeft, IconArrowRight, IconPalette, IconStack2Filled, IconUserScan, IconUserSquare, IconUserStar } from "@tabler/icons-react";
+import { IconArrowRight, IconPalette, IconStack2Filled, IconUserSquare, } from "@tabler/icons-react";
 import Image from "next/image";
 import styles from './page.module.css'
 import Link from "next/link";
@@ -72,8 +72,8 @@ const AboutPage = () => {
             <ServiceItem title={"Custom Development"} text={"We tailor our services to your specific needs, ensuring that every project is built to fit your goals, budget, and timeline."} /> */}
           </div>
         </div>
-        <div className="w-full flex gap-2 justify-end items-center">
-          <span className={`text-4xl font-bold ${styles.contact__highlight}`}>Contact</span><IconArrowRight size={36} stroke={2.5} />
+        <div className="w-full flex justify-end items-center">
+          <Link href='/contact'><div className="w-full flex gap-2 items-center"><span className={`text-4xl font-bold ${styles.contact__highlight}`}>Contact</span><IconArrowRight size={36} stroke={2.5} /></div></Link>
         </div>
       </div>
     </div>

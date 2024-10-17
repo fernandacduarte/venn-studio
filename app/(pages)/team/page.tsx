@@ -2,6 +2,7 @@
 // import Link from "next/link";
 import { IconArrowRight } from '@tabler/icons-react';
 import styles from './page.module.css'
+import Link from 'next/link';
 
 const TeamsPage = () => {
   return (
@@ -30,7 +31,7 @@ const TeamsPage = () => {
           {/* <div className="bg-neutralDark rounded-3xl w-[24rem] h-[24rem]"></div> */}
         </div>
         <div className="w-full px-16 lg:px-fluid-16-64 flex gap-2 justify-end items-center mt-4">
-          <span className={`text-4xl font-bold ${styles.contact__highlight}`}>Contact</span><IconArrowRight size={36} stroke={2.5} />
+          <Link href='/contact'><div className="w-full flex gap-2 items-center"><span className={`text-4xl font-bold ${styles.contact__highlight}`}>Contact</span><IconArrowRight size={36} stroke={2.5} /></div></Link>
         </div>
       </div>
     </div>
