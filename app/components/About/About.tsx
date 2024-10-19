@@ -107,36 +107,10 @@ const About = () => {
               priority
             />
           </div> */}
-          <div 
-            // className="absolute top-fluid-200-300 left-fluid-90-120 opacity-70 transform-about-image" 
+          {/* <div 
             className="w-full h-full absolute top-0 left-0 opacity-70 flex justify-center items-center" 
-            style={{ 
-              // width: '200%', 
-              // width: '250%',
-              // width: `clamp(200%, ${-550 + 52.0833*1440}%, 250%)`,
-              // width: `clamp(200%, 200%, 200%)`,
-              // width: `clamp(1523.41px, -6596.99px + 563.9167vw, 2064.77px)`,
-              // top: '-280px',
-              // left: '-380px',
-              // top: 'clamp(-280px, 2280px + -166.6667vw, -120px)',
-              // top: 'clamp(-120px, -120px, -120px)',
-              // left: 'clamp(-380px, 2660px + -197.9167vw, -190px)',
-              
-            }}
           >
             <Image
-              // className="absolute top-[200px] left-[120px] opacity-70"
-              // className="absolute top-[300px] left-[90px] opacity-70"
-              // style={{ transform: 'scale(2) rotate(10deg)' }}
-              // style={{ transform: 'scale(2.2) rotate(10deg)' }}
-              // style={{
-              //   height: 'auto',
-              //   objectFit: 'contain',
-              //   transform: 'rotate(10deg)',
-              //   transformOrigin: 'center center',
-              //   maxWidth: '200%',
-              //   width: '2000px !important',
-              // }}
               style={{
                 maxWidth: '200%',
                 width: '200%',
@@ -149,7 +123,24 @@ const About = () => {
               alt="About us"
               width={800}
               height={800}
-              // layout="responsive"
+              priority
+            />
+          </div> */}
+          <div 
+            className="w-[120%] h-[180%] absolute top-[-5%] left-0 opacity-70 flex justify-center items-center" 
+            style={{  }}
+          >
+            <Image
+              style={{
+                maxWidth: '200%',
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+              }}
+              src="images/uuundulate9-2.svg"
+              alt="About us"
+              width={800}
+              height={800}
               priority
             />
           </div>
