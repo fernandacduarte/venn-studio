@@ -6,7 +6,7 @@ interface MenuIconProps {
 }
 
 
-export default function () {
+export default function Menu () {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
