@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Menu from "../Menu/Menu";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -28,7 +29,11 @@ const Navbar = () => {
         </div>
       </Link>
 
-      <ul className="font-medium flex gap-8 items-center">
+      <div className="block lg:hidden">
+        <Menu/>
+      </div>
+
+      <ul className="hidden font-medium lg:flex gap-8 items-center">
         {/* <li className="cursor-pointer hover:scale-105 active:scale-95 transition-transform duration-300 " style={{  fontFamily: `${pathname === '/' ? 'var(--font-panamera-bold)' : ''}` }}>home</li> */}
         <Link href='/'><li className="cursor-pointer hover:scale-105 active:scale-95 transition-transform duration-300 " style={{  fontWeight: `${pathname === '/' ? '700' : ''}` }}>home</li></Link>
         <Link href='/about'><li className="cursor-pointer hover:scale-105 active:scale-95 transition-transform duration-300 " style={{  fontWeight: `${pathname === '/about' ? '700' : ''}` }}>about</li></Link>
