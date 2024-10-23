@@ -15,7 +15,7 @@ const Navbar = () => {
   //to-do: trocar largura maxima
 
   return (
-    <nav className="h-[90px] w-full max-w-screen-2xl mx-auto text-xl mb-3 py-6 px-16 lg:px-fluid-16-64 max-lg-sticky top-0 flex gap-8 justify-between items-center">
+    <nav className="h-[90px] w-full max-w-screen-2xl mx-auto text-xl mb-3 py-6 min-[375px]:px-6 px-4  md:px-16 lg:px-fluid-16-64 max-lg-sticky top-0 flex gap-8 justify-between items-center">
       <Link href='/'>
         <div className="flex gap-3 items-center cursor-pointer">
           <Image
@@ -25,7 +25,7 @@ const Navbar = () => {
             height={36}
             priority
           />
-          <span className="font-[family-name:var(--font-montserrat)] font-extrabold tracking-[0.02em] text-[1.5rem]">VENN <span className="ml-[2px]">STUDIO</span></span>
+          <span className="hidden min-[500px]:block font-[family-name:var(--font-montserrat)] font-extrabold tracking-[0.02em] text-[1.5rem]">VENN <span className="ml-[2px]">STUDIO</span></span>
         </div>
       </Link>
 
