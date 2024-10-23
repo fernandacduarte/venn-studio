@@ -18,7 +18,7 @@ const AboutPage = () => {
   return (
     <div className="animate-fadeIn w-full flex gap-6 flex-grow items-stretch">
       {/* <div className="h-full w-full flex flex-col gap-10 flex-grow rounded-3xl p-10 bg-neutralDark text-neutralLight-100"> */}
-      <div className="h-full w-full max-w-screen-2xl mx-auto px-4 min-[375px]:px-6 md:px-16 lg:px-fluid-16-64 flex flex-col gap-16 flex-grow text-neutralDark mt-2">
+      <div className="h-full w-full max-w-screen-2xl mx-auto md:px-16 min-[375px]:px-6 px-4 lg:px-fluid-16-64 flex flex-col gap-16 flex-grow text-neutralDark mt-2">
         {/* <div> */}
           {/* <span className="text-4xl font-extrabold">About us</span> */}
           {/* <span className="text-lg font-bold tracking-[0.035em]">ABOUT US</span> */}
@@ -28,7 +28,7 @@ const AboutPage = () => {
           <p className="text-2xl leading-normal min-[375px]:text-3xl min-[375px]:leading-normal min-[500px]:text-4xl min-[500px]:leading-normal font-semibold text-balance">
             We are a web development studio specializing in delivering tailor-made, <span className={`${styles.intro__highlight}`}>full-stack solutions</span>. 
           </p>
-          <p className="text-xl leading-normal min-[375]:text-2xl min-[375]:leading-normal min-[500px]:text-3xl min-[500px]:leading-normal font-light">
+          <p className="text-xl leading-normal min-[375px]:text-2xl min-[375px]:leading-normal min-[500px]:text-3xl min-[500px]:leading-normal font-light">
             From sleek UI design to seamless backend functionality, we build digital experiences that resonate with users and drive business growth. 
           </p>
         </div>
@@ -46,7 +46,7 @@ const AboutPage = () => {
             </div>
             <div className="max-w-[60ch]">
             {/* <div className="w-full"> */}
-              <p className="text-xl min-[375]:text-2xl leading-normal min-[500px]:text-3xl min-[375]:leading-normal min-[500px]:leading-normal font-light">
+              <p className="text-xl min-[375px]:text-2xl leading-normal min-[500px]:text-3xl min-[375px]:leading-normal min-[500px]:leading-normal font-light">
                 Our mission is to bridge <span className="text-highlight font-semibold">creativity and technology</span>, empowering businesses with innovative web solutions that are both visually compelling and technically robust.
               </p>
             </div>
