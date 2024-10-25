@@ -12,8 +12,8 @@ const carouselItems = [
   "Projects · ",
   "Apps · ",
   "Designs · ",
+  "Protocols · ",
   "Dapps · ",
-  "Protocols · "
 ]
 
 const Projects = () => {
