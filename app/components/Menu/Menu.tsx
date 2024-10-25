@@ -78,7 +78,7 @@ export default function Menu() {
                     <ul className="m-2 flex flex-col gap-8 text-2xl">
                         {menuItems.map((item, index) => (
                             <li key={index}
-                            className={`transition-all duration-300 ease-in-out ${isOpen ? 'translate-y-1 opacity-100' : 'opacity-0 translate-y-0'}`}
+                            className={`transition-all duration-300 ease-in-out ${isOpen ? 'translate-x-0 opacity-100' : 'opacity-0 translate-x-1/2'}`}
                             style={{  
                                 fontWeight: `${pathname === item.pathname ? '700' : ''}`,
                                 transitionDelay: `${isOpen ? index * 50 + 250 : 0}ms`
