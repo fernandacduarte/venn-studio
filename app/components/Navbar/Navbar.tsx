@@ -7,8 +7,6 @@ import Menu from "../Menu/Menu";
 const Navbar = () => {
   const pathname = usePathname();
 
-  console.log('pathname', pathname);
-
   // to-do: ver se fica bom sublinhar o link corrente com o mesmo tom de amarelo de Projects
   // (de repente fazendo um rabiscado no ffflux)
 
