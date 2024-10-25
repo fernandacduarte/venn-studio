@@ -13,15 +13,15 @@ const Team = () => {
       <Link href="/team">
         <div className="h-full flex flex-col justify-between items-center font-medium">
           <div className="w-full flex justify-between items-center mt-[-12px]">
-            <span className="tracking-[0.05em] max-w-[14ch]">
+            <span className="text-[0.65rem] sm:text-xs min-[860px]:text-sm lg:text-base tracking-[0.05em] max-w-[14ch]">
               MEET OUR TEAM MEMBERS
             </span>
-            <div className="mr-[-10px] rotate-45">
-              <IconArrowUpRight size={64} strokeWidth={1.2} />
+            <div className="mr-[-10px] rotate-45 text-[2.5rem] sm:text-[3rem] md:text-[3.5rem] lg:text-[4rem]">
+              <IconArrowUpRight size={'1em'} strokeWidth={1.2} />
             </div>
           </div>
           <div className="w-full flex justify-end items-center">
-            <span className="text-5xl leading-[2.5rem]">Team</span>
+            <span className="text-2xl sm:text-3xl lg:text-5xl lg:leading-[2.5rem]">Team</span>
           </div>
         </div>
       </Link>

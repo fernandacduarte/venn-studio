@@ -28,12 +28,12 @@ const About = () => {
           <div className="flex justify-between items-start text-neutralLight-100">
             {/* <div className="font-[family-name:var(--font-panamera-medium)] flex flex-col gap-2"> */}
             <div className="font-medium flex flex-col gap-2">
-              <span className="tracking-[0.07em]">ABOUT US</span>
+              <span className="text-xs sm:text-sm md:text-base tracking-[0.07em]">ABOUT US</span>
               {/* <span className="text-[3.5rem] leading-[4rem] w-full max-w-[20ch] tracking-[0.04em]">We are a <br />Web Development Studio</span> */}
-              <span className="text-[3.75rem] font-medium leading-[4.5rem] w-full max-w-[20ch] tracking-[0.03em]">We are a Web Development Studio</span>
+              <span className="text-[1.75rem] min-[375px]:text-[1.875rem] min-[460px]:text-[2rem] sm:text-[2.25rem] sm:text-[2.5rem] md:text-[2.75rem] lg:text-[3rem] min-[1140px]:text-[3.75rem] font-medium leading-[3rem] sm:leading-[4.5rem] w-full max-w-[20ch] tracking-[0.03em]">We are a Web Development Studio</span>
             </div>
-            <div className="h-full mt-[-16px]">
-              <IconArrowUpRight size={80} strokeWidth={1} />
+            <div className="h-full mt-[-16px] text-[4rem] min-[500px]:text-[4.5rem] md:text-[5rem]">
+              <IconArrowUpRight size={'1em'} strokeWidth={1} />
             </div>
           </div>
           {/* <div className='absolute top-0 left-0 object-fill w-full h-full'>
