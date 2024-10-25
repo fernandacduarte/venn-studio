@@ -16,7 +16,9 @@ const ProjectsPage = () => {
         </div>
         <div className='w-full flex flex-col gap-10 justify-center items-center mt-6'>
           <div className={`flex gap-3 justify-center items-center px-6 py-6 bg-neutralDark text-neutralLight-100 rounded-2xl ${styles.button}`}>
-            <span className='text-2xl sm:text-3xl md:text-4xl font-semibold'>Click here to send a message</span><IconMail size={38} stroke={2} style={{ marginTop: '4px' }} />
+            <span className='hidden min-[500px]:block text-2xl sm:text-3xl md:text-4xl font-semibold '>Click here to send a message</span>
+            <span className='text-2xl font-semibold min-[500px]:hidden'>Send a message</span>
+            <div className='text-[28px] ms:text-[32px] md:text-[38px]'><IconMail size={'1em'} stroke={2} style={{ marginTop: '4px' }} /></div>
           </div>
           <span className='text-2xl min-[430px]:text-3xl md:text-4xl font-bold'>or</span>
           <div className="flex flex-wrap justify-center items-center text-2xl min-[430px]:text-3xl md:text-4xl font-semibold">
