@@ -127,22 +127,26 @@ const About = () => {
             />
           </div> */}
           <div 
-            className="w-[120%] h-[180%] absolute top-[-5%] left-0 opacity-70 flex justify-center items-center" 
+            className={`w-[120%] h-[180%] absolute top-[-5%] left-0 opacity-70 flex justify-center items-center animate-slowScale`} 
             style={{  }}
           >
-            <Image
-              style={{
-                maxWidth: '200%',
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-              }}
-              src="images/uuundulate9-2.svg"
-              alt="About us"
-              width={800}
-              height={800}
-              priority
-            />
+            <div className='w-full h-full animate-swingX'>
+              <div className='w-full h-full animate-slowRotate'>
+                <Image
+                  style={{
+                    maxWidth: '200%',
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                  }}
+                  src="images/uuundulate9-2.svg"
+                  alt="About us"
+                  width={800}
+                  height={800}
+                  priority
+                />
+              </div>
+            </div>
           </div>
       </Link>
     </SimpleCard>

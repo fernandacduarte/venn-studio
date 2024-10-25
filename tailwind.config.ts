@@ -26,11 +26,31 @@ const config: Config = {
           '0%': { opacity: '0.15' },
           '50%': { opacity: '0.3' },
           '100%': { opacity: '0.15' },
+        },
+        slide: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' }
+        },
+        scale: {
+          '0%' : { transform: 'scale(1)'},
+          '100%': { transform: 'scale(1.05)'}
+        },
+        rotate10deg: {
+          '0%': {transform: 'rotate(0deg)'},
+          '100%': {transform: 'rotate(2.5deg)'}
+        },
+        smallTranslateX : {
+          '0%': { transform: 'translateX(-1%)' },
+          '100%': { transform: 'translateX(1%)'}
         }
       },
       animation: {
         fadeIn: 'fadeIn 1s ease-out',
         pulse: 'pulse 2s ease-out infinite',
+        carousel: 'slide 10s linear infinite',
+        slowScale: 'scale 10s linear 1s infinite alternate',
+        slowRotate: 'rotate10deg 20s infinite alternate',
+        swingX: 'smallTranslateX 15s infinite alternate'
       },
       padding: {
         // min: 1024px, max: 1440px
