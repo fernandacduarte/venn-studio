@@ -77,7 +77,8 @@ export default function Menu() {
                     />
                     <ul className="m-2 flex flex-col gap-8 text-2xl">
                         {menuItems.map((item, index) => (
-                            <li className={`animation-fadeIn duration-250 delay-${index * 50}`}
+                            <li key={index}
+                            className={`animation-fadeIn duration-250 delay-${index * 50}`}
                             style={{  fontWeight: `${pathname === item.pathname ? '700' : ''}` }}
                             onClick={handleClick}
                             >
