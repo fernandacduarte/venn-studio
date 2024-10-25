@@ -1,18 +1,53 @@
+'use client'
 import { IconArrowRight, IconPalette, IconStack2Filled, IconUserSquare, } from "@tabler/icons-react";
 import Image from "next/image";
 import styles from './page.module.css'
 import Link from "next/link";
+import { useRef, useState, useEffect } from "react";
 
 // highlight color: #D3EF8A
 
 const ServiceItem = ({ title, text } : { title: string, text: string}) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setShow(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, []);
+
   return (
-    <div className="flex flex-col gap-4 max-w-[65ch] pt-4 px-2 min-[430px]:pl-6 min-[430px]:pt-0  border-t-2 min-[430px]:border-l-2 min-[430px]:border-t-0 border-black">
+    <div 
+      ref={ref} 
+      className={`${show ? 'opacity-1 translate-x-0' : 'opacity-0 translate-x-6'} transition-all duration-500 ease-out flex flex-col gap-4 max-w-[65ch] pt-4 px-2 min-[430px]:pl-6 min-[430px]:pt-0  border-t-2 min-[430px]:border-l-2 min-[430px]:border-t-0 border-black`}
+    >
       <span className="text-2xl leading-normal min-[375px]:text-[1.75rem] min-[375px]:leading-normal min-[500px]:text-3xl min-[500px]:leading-normal font-semibold">{title}</span>
       <p className="text-xl min-[500px]:text-2xl leading-[2.3rem] min-[500px]:leading-[2.3rem] font-light">{text}</p>
     </div>
   );
 };
+
 
 const AboutPage = () => {
   return (
