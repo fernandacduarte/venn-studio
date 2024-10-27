@@ -50,7 +50,7 @@ const config: Config = {
         carousel: 'slide 10s linear infinite',
         slowScale: 'scale 10s linear 1s infinite alternate',
         slowRotate: 'rotate10deg 20s infinite alternate',
-        swingX: 'smallTranslateX 15s infinite alternate'
+        swingX: 'smallTranslateX 12s infinite alternate'
       },
       padding: {
         // min: 1024px, max: 1440px

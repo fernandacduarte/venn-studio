@@ -70,15 +70,17 @@ const AboutPage = () => {
         </div>
         <div className="w-full">
           <div className="w-full relative px-8 py-28 min-[430px]:px-12 min-[430px]:py-32 flex items-center justify-end bg-neutralDark rounded-3xl text-neutralLight-100 overflow-hidden">
-            <div className="w-full h-full absolute right-[50%] min-[1210px]:right-[45%] min-[1260px]:right-[40%] min-[1378px]:right-[30%] top-0 flex items-center justify-center opacity-70">
-              <Image
-                src="/images/about-page-image.svg" 
-                alt="About section abstract image"
-                // layout="fill"
-                width={920}
-                height={920}
-                objectFit="cover"
-              />
+            <div className="w-full h-full absolute right-[50%] min-[1210px]:right-[45%] min-[1260px]:right-[40%] min-[1378px]:right-[30%] top-0 flex items-center justify-center opacity-70 animate-swingX">
+              <div className="w-full h-full flex items-center justify-center animate-slowRotate">
+                <Image
+                  src="/images/about-page-image.svg" 
+                  alt="About section abstract image"
+                  // layout="fill"
+                  width={920}
+                  height={920}
+                  objectFit="cover"
+                />
+              </div>
             </div>
             <div className="max-w-[60ch]">
             {/* <div className="w-full"> */}
