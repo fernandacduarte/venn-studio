@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from './page.module.css'
 import Link from "next/link";
 import { useRef, useState, useEffect } from "react";
+import { AIIcon, BlockchainIcon } from "@/app/components/Icons/Icons";
 
 // highlight color: #D3EF8A
 
@@ -102,6 +103,14 @@ const AboutPage = () => {
               <div className="opacity-50"><IconUserSquare size={96} color={'hsl(77, 76%, 54%)'}/></div>       
               <ServiceItem title={"Custom Development"} text={"We tailor our services to your specific needs, ensuring that every project is built to fit your goals, budget, and timeline."} />
             </div>
+            <div className="flex flex-col min-[430px]:flex-row gap-6 items-center">
+              <div className="opacity-50"><AIIcon size={96} color={'hsl(77, 76%, 54%)'} stroke={6}/></div>       
+              <ServiceItem title={"AI Integration"} text={"We'll help you unlock the full potential of your application with artificial Intelligence, integrating the most advanced AI models specifically to your tool."} />
+            </div>
+            <div className="flex flex-col min-[430px]:flex-row gap-6 items-center">
+              <div className="opacity-50 w-[96px] ml-[-14px] mr-[14px]"><BlockchainIcon size={124} color={'hsl(77, 76%, 54%)'} stroke={3}/></div>       
+              <ServiceItem title={"Blockchain Integration"} text={"Curious if decentralization is the right path for your application? Talk to us, and we'll handle the rest. From identifying the best solutions for your needs to implementing a comprehensive suite of decentralized tools using industry standards."} />
+            </div>    
             {/* <ServiceItem title={"Full-Stack Development"} text={"We craft end-to-end web solutions, handling everything from frontend aesthetics to backend logic. Whether it's a fast, responsive website or a complex web application, we've got you covered."} />
             <ServiceItem title={"UI/UX Design"} text={"Our design team creates user-friendly interfaces that are not only visually appealing but also intuitive and engaging, making every interaction count."} />
             <ServiceItem title={"Custom Development"} text={"We tailor our services to your specific needs, ensuring that every project is built to fit your goals, budget, and timeline."} /> */}
