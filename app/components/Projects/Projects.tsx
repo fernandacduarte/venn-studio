@@ -9,11 +9,11 @@ import Carousel from "../Carousel/Carousel";
 // }
 
 const carouselItems = [
-  "Projects · ",
-  "Apps · ",
-  "Designs · ",
-  "Protocols · ",
-  "Dapps · ",
+  "Projects", " · ",
+  "Apps", " · ",
+  "Designs", " · ",
+  "Protocols", " · ",
+  "Dapps", " · ",
 ]
 
 const Projects = () => {
