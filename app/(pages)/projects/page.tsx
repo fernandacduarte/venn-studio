@@ -3,7 +3,7 @@
 
 const ProjectsPage = () => {
   return (
-    <div className="relative animate-fadeIn w-full p-4 min-[375px]:p-6 md:px-16 lg:px-fluid-16-64 flex gap-6 flex-grow items-stretch">
+    <div className="relative animate-fadeIn w-full max-w-screen-2xl mx-auto p-4 min-[375px]:p-6 md:px-16 lg:px-fluid-16-64 flex gap-6 flex-grow items-stretch">
       <div className="h-full w-full flex flex-col gap-14 flex-grow text-neutralDark mt-12">
         {/* <Link href="/"><div className="w-full flex gap-2 opacity-70"><IconArrowLeft strokeWidth={1.2}/><span className="">Home</span></div></Link> */}
         {/* <div>
