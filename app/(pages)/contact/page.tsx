@@ -15,7 +15,7 @@ const ContactPage = () => {
           <span className="text-2xl min-[430px]:text-3xl md:text-4xl font-extrabold">Contact us!</span>
         </div>
         <div className='w-full flex flex-col gap-10 justify-center items-center mt-6'>
-          <div className={`flex gap-5 justify-center items-start px-6 py-6 bg-neutralDark text-neutralLight-100 rounded-2xl ${styles.button}`}>
+          <div className={`flex gap-5 justify-center items-start px-10 py-6 bg-neutralDark text-neutralLight-100 rounded-2xl ${styles.button}`}>
             <div className='text-[28px] sm:text-[32px] md:text-[38px]'><IconCalendar size={'1em'} stroke={2} /></div>
             <span className='text-2xl sm:text-3xl md:text-4xl font-semibold '>Book a call</span>
             {/* <span className='text-2xl font-semibold min-[500px]:hidden'>Send a message</span> */}
