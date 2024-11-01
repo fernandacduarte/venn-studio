@@ -113,7 +113,7 @@ const AboutPage = () => {
             </div>
             <div className="flex flex-col min-[430px]:flex-row gap-6 items-center">
               <div className="opacity-50"><AIIcon size={96} color={'hsl(77, 76%, 54%)'} stroke={6}/></div>       
-              <ServiceItem title={"AI Integration"} text={"We'll help you unlock the full potential of your application with artificial Intelligence, integrating the most advanced AI models specifically to your tool."} />
+              <ServiceItem title={"AI Integration"} text={"We integrate cutting-edge AI models to supercharge your product, tailored precisely to your use case."} />
             </div>
             <div className="flex flex-col min-[430px]:flex-row gap-6 items-center">
               <div className="opacity-50 w-[96px] ml-[-14px] mr-[14px]"><BlockchainIcon size={124} color={'hsl(77, 76%, 54%)'} stroke={3}/></div>       
