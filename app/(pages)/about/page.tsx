@@ -90,7 +90,7 @@ const AboutPage = () => {
             </div>
           </div>          
         </div>
-        <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center mt-6 ">
+        <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-center lg:mt-6 ">
           <span className="md:text-center max-w-[26ch] text-2xl leading-normal min-[375px]:text-3xl min-[375px]:leading-normal min-[500px]:text-4xl min-[500px]:leading-normal font-semibold">Have a game-changing idea? Skip the big agencies</span>
           <span className="max-w-[53ch] md:text-center text-xl  leading-normal min-[500px]:text-2xl min-[375px]:leading-normal min-[500px]:leading-normal font-light">
             Our lean team works directly with founders to validate concepts and ship MVPs fast. Through rapid iteration and ruthless prioritization, we deliver products that users love and investors notice—without the overhead and complexity of large agencies. We're built for startups who need beautiful, functional products—without burning runway.
@@ -113,7 +113,7 @@ const AboutPage = () => {
             </div>
             <div className="flex flex-col min-[430px]:flex-row gap-6 items-center">
               <div className="opacity-50"><AIIcon size={96} color={'hsl(77, 76%, 54%)'} stroke={6}/></div>       
-              <ServiceItem title={"AI Integration"} text={"We integrate cutting-edge AI models to supercharge your product, tailored precisely to your use case."} />
+              <ServiceItem title={"AI Integration"} text={"We integrate cutting-edge AI models to supercharge your product, with everything tailored precisely to your use case."} />
             </div>
             <div className="flex flex-col min-[430px]:flex-row gap-6 items-center">
               <div className="opacity-50 w-[96px] ml-[-14px] mr-[14px]"><BlockchainIcon size={124} color={'hsl(77, 76%, 54%)'} stroke={3}/></div>       
