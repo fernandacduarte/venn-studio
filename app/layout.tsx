@@ -61,7 +61,7 @@ export default function RootLayout({
       <body
         // className={`${panameraLight.variable} ${panameraRegular.variable} ${panameraMedium.variable} ${panameraBold.variable} ${montserrat.variable} ${poppins.variable} antialiased flex flex-col items-stretch min-h-screen bg-neutralLight-100 relative`}
         // className={`${poppins.variable} antialiased flex flex-col items-stretch min-h-screen bg-neutralLight-100 relative`}
-        className={`${raleway.variable} ${montserrat.variable} font-[family-name:var(--font-raleway)] antialiased flex flex-col items-stretch min-h-screen bg-neutralLight-100 relative`}
+        className={`${raleway.variable} ${montserrat.variable} font-[family-name:var(--font-raleway)] antialiased flex flex-col items-stretch min-h-screen bg-background text-foreground relative`}
         // className={`${panameraRegular.className} antialiased`}
       >
         <Navbar />
