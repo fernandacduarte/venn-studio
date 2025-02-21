@@ -16,6 +16,8 @@ const config: Config = {
     },
     extend: {
       colors: {
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
         'neutralDark': "#121717",
         'neutralLight-300': "#CECFD1",
         'neutralLight-100': "#EBEBEC",
