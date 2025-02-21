@@ -1,10 +1,10 @@
-interface IconProps { size: number, color?: string, stroke?: number }
+interface IconProps { className: string, stroke?: number }
 
-export function AIIcon ({ size, color, stroke } : IconProps ) {
+export function IconAI ({ className } : IconProps ) {
 
     return (
-        <div style={{ color: color }}>
-            <svg fill="currentColor" height="96px" width="96px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" 
+        <div className={className}>
+            <svg fill="currentColor" height="100%" width="100%" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" 
                 viewBox="0 0 512 512" xmlSpace="preserve">
                 <g>
                     <g>
@@ -37,8 +37,35 @@ export function AIIcon ({ size, color, stroke } : IconProps ) {
     )
 }
 
-export function BlockchainIcon ({ size, color, stroke } : IconProps) {
+// export function IconBlockchain ({ className, stroke } : IconProps) {
+//     return (
+//         <div className={className}>
+//             <svg width='100%' height='100%' viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none" stroke='currentColor' strokeWidth={`${stroke || 1}`}><polyline points="48 8 16 24 16 40 48 56"/><polyline points="16 8 48 24 48 40 16 56"/><line x1="48" y1="24" x2="32" y2="32"/><line x1="16" y1="24" x2="32" y2="32"/><line x1="32" y1="48" x2="32" y2="32"/></svg>
+//         </div>
+//     )
+// }
+
+export const IconBlockchain = ({
+    className
+}: {
+    className: string
+}) => {
     return (
-        <svg width={`${size}px`} height={`${size}px`} viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none" stroke={`${color}`} strokeWidth={`${stroke || 1}`}><polyline points="48 8 16 24 16 40 48 56"/><polyline points="16 8 48 24 48 40 16 56"/><line x1="48" y1="24" x2="32" y2="32"/><line x1="16" y1="24" x2="32" y2="32"/><line x1="32" y1="48" x2="32" y2="32"/></svg>
+        <div className={className}>
+            <svg width="100%" height="100%" viewBox="0 0 110 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clipPath="url(#clip0_882_238)">
+                <rect x="33" y="27.5" width="42" height="42" rx="9" stroke="currentColor" strokeWidth="6"/>
+                <rect x="97" y="27.5" width="42" height="42" rx="9" stroke="currentColor" strokeWidth="6"/>
+                <rect x="-31" y="27.5" width="42" height="42" rx="9" stroke="currentColor" strokeWidth="6"/>
+                <line x1="78" y1="48.5" x2="94" y2="48.5" stroke="currentColor" strokeWidth="6"/>
+                <line x1="14" y1="48.5" x2="30" y2="48.5" stroke="currentColor" strokeWidth="6"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_882_238">
+                <rect width="110" height="96" fill="white"/>
+                </clipPath>
+                </defs>
+            </svg>
+        </div>
     )
 }
