@@ -100,8 +100,8 @@ function MenuIcon ({ isOpen } : MenuIconProps) {
     const openClassBottom = "rotate-45 -translate-y-[5px]"
     return (
         <div className="h-3 w-6 relative z-20">
-            <div className={`h-0.5 w-6 bg-black absolute top-0 left-0 transition-all ${isOpen ? openClassTop : ''}`}></div>
-            <div className={`h-0.5 w-6 bg-black absolute bottom-0 left-0 transition-all ${isOpen ? openClassBottom : ''}`}></div>
+            <div className={`h-0.5 w-6 bg-current absolute top-0 left-0 transition-all ${isOpen ? openClassTop : ''}`}></div>
+            <div className={`h-0.5 w-6 bg-current absolute bottom-0 left-0 transition-all ${isOpen ? openClassBottom : ''}`}></div>
         </div>
     )
 }
