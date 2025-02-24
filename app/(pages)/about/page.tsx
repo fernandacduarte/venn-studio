@@ -1,54 +1,54 @@
 'use client'
-import { IconAi, IconArrowRight, IconPalette, IconStack2Filled, IconStackFront, IconTable, IconUserSquare, IconUserStar, } from "@tabler/icons-react";
-import Image from "next/image";
+import { IconArrowRight, IconPalette, IconStack2Filled, IconStackFront, IconTable, IconUserSquare, IconUserStar, } from "@tabler/icons-react";
 import styles from './page.module.css'
 import Link from "next/link";
-import { useRef, useState, useEffect } from "react";
-import { IconAI, IconBlockchain } from "@/app/components/Icons/Icons";
 import { BackgrounSVG } from "./graphics";
+import { Carousel } from "react-responsive-3d-carousel";
+import 'react-responsive-3d-carousel/dist/styles.css';
+import { IconBlockchain, IconAI } from "@/app/components/Icons/Icons";
 
 // highlight color: #D3EF8A
 
-const ServiceItem = ({ title, text } : { title: string, text: string}) => {
-  const ref = useRef<HTMLDivElement>(null);
-  const [show, setShow] = useState(false);
+// const ServiceItem = ({ title, text } : { title: string, text: string}) => {
+//   const ref = useRef<HTMLDivElement>(null);
+//   const [show, setShow] = useState(false);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setShow(true);
-          observer.unobserve(entry.target);
-        }
-      },
-      {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-      }
-    );
+//   useEffect(() => {
+//     const observer = new IntersectionObserver(
+//       ([entry]) => {
+//         if (entry.isIntersecting) {
+//           setShow(true);
+//           observer.unobserve(entry.target);
+//         }
+//       },
+//       {
+//         root: null,
+//         rootMargin: '0px',
+//         threshold: 0.1
+//       }
+//     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
+//     if (ref.current) {
+//       observer.observe(ref.current);
+//     }
 
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
-  }, []);
+//     return () => {
+//       if (ref.current) {
+//         observer.unobserve(ref.current);
+//       }
+//     };
+//   }, []);
 
-  return (
-    <div 
-      ref={ref} 
-      className={`${show ? 'opacity-1 translate-x-0' : 'opacity-0 translate-x-6'} transition-all duration-500 delay-300 ease-out flex flex-col gap-4 max-w-[65ch] pt-4 px-2 min-[430px]:pl-6 min-[430px]:pt-0  border-t-2 min-[430px]:border-l-2 min-[430px]:border-t-0 border-black`}
-    >
-      <span className="text-2xl leading-normal min-[375px]:text-[1.75rem] min-[375px]:leading-normal min-[500px]:text-3xl min-[500px]:leading-normal font-semibold">{title}</span>
-      <p className="text-xl min-[500px]:text-2xl leading-[2rem] min-[500px]:leading-[2.3rem] font-light">{text}</p>
-    </div>
-  );
-};
+//   return (
+//     <div 
+//       ref={ref} 
+//       className={`${show ? 'opacity-1 translate-x-0' : 'opacity-0 translate-x-6'} transition-all duration-500 delay-300 ease-out flex flex-col gap-4 max-w-[65ch] pt-4 px-2 min-[430px]:pl-6 min-[430px]:pt-0  border-t-2 min-[430px]:border-l-2 min-[430px]:border-t-0 border-black`}
+//     >
+//       <span className="text-2xl leading-normal min-[375px]:text-[1.75rem] min-[375px]:leading-normal min-[500px]:text-3xl min-[500px]:leading-normal font-semibold">{title}</span>
+//       <p className="text-xl min-[500px]:text-2xl leading-[2rem] min-[500px]:leading-[2.3rem] font-light">{text}</p>
+//     </div>
+//   );
+// };
 
 
 function Card ({
@@ -61,18 +61,46 @@ function Card ({
   description: string
 }) {
   return (
-      <div className={`${styles.gradientBg} rounded-2xl px-6 py-6 lg:px-10 lg:py-10 flex flex-col gap-6 items-start w-full max-w-[460px] md:max-w-[560px]`}>
-          {icon}
+      <div className={`${styles.gradientBg} rounded-2xl px-6 py-6 lg:px-10 lg:py-10 flex flex-col gap-6 items-start w-full h-full`}>
+          <div className="w-full flex justify-center">{icon}</div>
           <div className="w-full flex flex-col gap-2 items-start">
               <span className="font-bold">{title}</span>
               {/* <p className="text-base md:text-lg lg:text-xl font-light leading-[2rem] "> */}
-              <p className="mb-4 text-lg md:text-[21.5px] lg:text-[27px] leading-normal">
+              <p className="mb-4 text-lg md:text-[21.5px] lg:text-[24px] leading-normal">
                 {description}
               </p>
           </div>
       </div>
   )
 }
+
+const carouselItems = [
+  <Card 
+  icon={<div className="text-[135px] md:text-[150px] lg:text-[180px]"><IconStackFront size={'1em'}/></div>}
+  title="Full-Stack Development"
+  description="We craft end-to-end web solutions, handling everything from frontend aesthetics to backend logic."
+  />,
+  <Card
+  icon={<div className="text-[72px] md:text-[80px] lg:text-[96px]"><IconTable size={'1em'} stroke={2}/></div>}
+  title="UI/UX Design"
+  description="Our design team creates user-friendly interfaces that are not only visually appealing but also intuitive and engaging, making every interaction count."
+  />,
+  <Card
+  icon={<IconAI className="w-[72px] md:w-[80px] lg:w-[96px]"/>}
+  title={"AI tools"}
+  description="We integrate cutting-edge AI models to supercharge your product, with everything tailored precisely to your use case."
+  />,
+  <Card
+  icon={<IconBlockchain className="w-[82px] md:w-[91px] lg:w-[110px]"/>}
+  title="Blockchain Integration"
+  description="Evaluating blockchain for your product? We help businesses make the right call, then build it right—using industry-leading Web3 tools and protocols."
+  />,
+  <Card
+  icon={<div className="text-[72px] md:text-[80px] lg:text-[96px]"><IconUserStar size={'1em'}/></div>}
+  title="Customized products"
+  description="We tailor our services to your specific needs, ensuring that every project is built to fit your goals, budget, and timeline."
+  />
+]
 
 
 const AboutPage = () => {
@@ -122,8 +150,14 @@ const AboutPage = () => {
             Our lean team works directly with founders to validate concepts and ship MVPs fast. Through rapid iteration and ruthless prioritization, we deliver products that users love and investors notice—without the overhead and complexity of large agencies. We're built for startups who need beautiful, functional products—without burning runway.
           </p>
         </div>
-        <div className="flex flex-col gap-12 items-center justify-center my-4 mt-6">
+        <div className="flex flex-col items-center justify-center my-4 mt-6">
           <h1>What we offer</h1>
+          <Carousel
+          items={carouselItems}
+          startIndex={0}
+          containerHeight="700px"
+          height="500px"
+          />
           {/* <div className="flex flex-col gap-[6rem] items-center justify-center">
             <div className="flex flex-col min-[430px]:flex-row gap-6 items-center">
               <div className="opacity-50"><IconStack2Filled size={96} color={'hsl(77, 76%, 54%)'}/></div>       
@@ -146,11 +180,11 @@ const AboutPage = () => {
               <ServiceItem title={"Blockchain Integration"} text={"Evaluating blockchain for your product? We help businesses make the right call, then build it right—using industry-leading Web3 tools and protocols."} />
             </div>          
           </div> */}
-          <Card 
-              icon={<div className="text-[72px] md:text-[80px] lg:text-[96px]"><IconStackFront size={'1em'}/></div>}
+          {/* <Card 
+              icon={<div className="text-[135px] md:text-[150px] lg:text-[180px]"><IconStackFront size={'1em'}/></div>}
               title="Full-Stack Development"
               description="We craft end-to-end web solutions, handling everything from frontend aesthetics to backend logic."
-              />
+          /> */}
           {/* <div className="flex flex-col gap-6">
             <div className="flex gap-6">
               <Card 
@@ -195,7 +229,7 @@ const AboutPage = () => {
           </p>
         </div>
         <div className="w-full flex justify-end items-center mt-10">
-          <Link href='/contact'><div className="w-full flex gap-2 items-center"><h2 className={`font-bold ${styles.contact__highlight}`}>Contact</h2><IconArrowRight size={36} stroke={2.5} /></div></Link>
+          <Link href='/contact'><div className="w-full flex gap-2 items-center"><h2 className={`${styles.contact__highlight}`}>Contact</h2><IconArrowRight size={36} stroke={2.5} /></div></Link>
         </div>
       </div>
     </div>
