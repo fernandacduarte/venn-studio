@@ -35,7 +35,7 @@ export default function ProjectDescription ({
                 <div className="relative w-full rounded-xl p-10 bg-gray-300 overflow-hidden"
                 style={{ boxShadow: 'rgba(149, 157, 165, 0.3) 0px 4px 24px' }}
                 >
-                    <div className="absolute w-[800px] right-0 top-[50%] -translate-y-1/2 translate-x-1/3 opacity-30">
+                    <div className="absolute w-[500px] md:w-[800px] right-0 top-[50%] -translate-y-1/2 translate-x-1/2 lg:translate-x-1/3 opacity-30">
                         <SlowMotion className="w-full">
                             <img
                             src="/images/uuundulate9-dark.svg"
@@ -57,14 +57,14 @@ export default function ProjectDescription ({
                 }
                 <div className="w-full flex justify-between items-center mt-20">
                     <Link href={index === 0 ? '/projects' : resolveProjectsPathname(index - 1)}>
-                        <div className="w-full flex gap-2 items-center">
+                        <div className="w-full flex max-[360px]:gap-1 gap-2 items-center">
                             <h2 className="scale-[-1]"><IconArrowRight size={'1em'} stroke={2} /></h2>
                             <h2 className={`${styles.contact__highlight}`}>{index === 0 ? "Projects" : "Previous"}</h2>
                         </div>
                     </Link>
                     <Link href={index === quantity - 1 ? "/contact" : resolveProjectsPathname(index + 1)}>
-                        <div className="w-full flex gap-2 items-center">
-                            <h2 className={`${styles.contact__highlight}`}>{index === quantity - 1 ? "Contact us" : "Next"}</h2>
+                        <div className="w-full flex max-[360px]:gap-1 gap-2 items-center">
+                            <h2 className={`${styles.contact__highlight}`}>{index === quantity - 1 ? "Contact" : "Next"}</h2>
                             <h2><IconArrowRight size={'1em'} stroke={2} /></h2>
                         </div>
                     </Link>
