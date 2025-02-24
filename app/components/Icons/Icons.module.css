@@ -1,0 +1,38 @@
+.dotWink {
+    animation: wink 250ms ease-in-out infinite;
+    animation-delay: 2500ms; /* Total cycle is 3500ms (500ms animation + 3000ms pause) */
+  }
+  
+  .dotFlashOut {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    animation: flashOut 1000ms ease-in-out infinite; /* Changed to 1000ms (1s) */
+    animation-delay: 2750ms; /* Starts right after wink ends (2500ms + 500ms = 3000ms) */
+  }
+  
+  
+  @keyframes wink {
+    0% { 
+      transform: scale(1); 
+    }
+    100% { 
+      transform: scale(0.85); 
+    }
+  }
+  
+  @keyframes flashOut {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 0;
+    }
+    1% {
+      transform: scale(1);
+      opacity: 0.6;
+    }
+    99% {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+  

@@ -2,6 +2,7 @@
 // import Link from "next/link";
 import { IconMail, IconCalendar } from '@tabler/icons-react';
 import styles from './page.module.css'
+import { AvailableNowIcon } from '@/app/components/Icons/Icons';
 
 const ContactPage = () => {
   return (
@@ -17,10 +18,13 @@ const ContactPage = () => {
         </div>
         <div className='w-full flex flex-col flex-1 gap-10 justify-center items-center mt-6'>
           <p className='leading-normal max-w-[30ch] text-center'>Ready to discuss your next project? Let's connect for a no-obligation consultation.</p>
-          <div className={`flex gap-5 justify-center items-start px-10 py-6 bg-foreground text-background rounded-2xl ${styles.button}`}>
-            <div className='text-[28px] sm:text-[32px] md:text-[38px]'><IconCalendar size={'1em'} stroke={2} /></div>
-            <h2>Book a call</h2>
-            {/* <span className='text-2xl font-semibold min-[500px]:hidden'>Send a message</span> */}
+          <div className='flex flex-col gap-6 items-center'>
+            <div className='flex gap-2 items-center'><AvailableNowIcon/><span className='text-xs md:text-sm lg:text-base font-semibold opacity-70'>Slots availabe</span></div>
+            <button className={`flex gap-5 justify-center items-start px-10 py-6 bg-foreground text-background rounded-2xl ${styles.button}`}>
+              <div className='text-[28px] sm:text-[32px] md:text-[38px]'><IconCalendar size={'1em'} stroke={2} /></div>
+              <h2>Book a call</h2>
+              {/* <span className='text-2xl font-semibold min-[500px]:hidden'>Send a message</span> */}
+            </button>
           </div>
           {/* <h2 >or</h2>
           <p className='text-2xl md:text-3xl lg:text-4xl'>
