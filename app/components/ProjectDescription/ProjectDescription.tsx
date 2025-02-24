@@ -4,15 +4,11 @@ import { IconArrowRight } from "@tabler/icons-react";
 import styles from "./ProjectDescription.module.css";
 import ReactMarkdown from 'react-markdown';
 import Markdown from "../Markdown/Markdown";
-import { quantity, ProjectMetadata, projects } from "@/app/lib/projects";
+import { quantity, ProjectMetadata, resolveProjectsPathname } from "@/app/lib/projects";
 import SlowMotion from "../SlowMotion/SlowMotion";
 
 interface ProjectDescriptionProps extends ProjectMetadata {
     index: number
-}
-
-const resolveProjectsPathname = (index: number) => {
-    return `/projects/${projects[index].slug}`;
 }
 
 export default function ProjectDescription ({
