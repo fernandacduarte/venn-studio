@@ -3,8 +3,12 @@ import { ProjectMetadata } from ".";
 export const projects: ProjectMetadata[] = [
     {
         title: "The Ring AI",
+        org: "Venn Studio",
+        logo: "/images/projects/the-ring-ai/logo.svg",
         subtitle: "One generative AI app to rule them all!!",        
-        images: [],
+        images: [
+                "/images/projects/the-ring-ai/the-ring-ai-promo-1.png"
+        ],
         slug: 'the-ring-ai-generative-ai-world-app',
         description: `The World project is building a global financial and identity network powered by proof of personhood. At its core is World App, a simple crypto wallet through which verified users receive UBI payments in WLD the associated token of the project.
 
@@ -17,8 +21,12 @@ Learn more by visiting [theringai.xyz](https://theringai.xyz).
     },
     {
         title: "Deforestation Calculator",
+        org: "Conservation Strategy",
+        logo: "/images/projects/csf/logo.svg",
         subtitle: "Estimating economic damage to the Amazon",
-        images:[],
+        images: [
+                "/images/projects/the-ring-ai/the-ring-ai-promo-1.png"
+        ],
         slug: "deforestation-calculator-amazon-damage-estimation-tool",
         description: `Deforestation in the Amazon is a critical environmental issue, leading to severe biodiversity loss, disruption of ecosystems, and increased carbon emissions. Driven by illegal logging, agriculture, cattle ranching, mining, and infrastructure development, it also threatens indigenous communities livelyhoods. The Amazon plays a crucial role in regulating global weather patterns and storing carbon, making its preservation essential for planetary health. Urgent action is needed to enforce conservation policies, promote sustainable land use, and curb deforestation to protect this vital ecosystem.
         
