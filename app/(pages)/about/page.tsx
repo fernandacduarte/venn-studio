@@ -94,7 +94,7 @@ const AboutPage = () => {
           </p>
         </div>
         <div className="w-full">
-          <div className="w-full relative px-8 py-20 md:py-28 min-[430px]:px-12 flex items-center justify-end bg-neutralDark dark:bg-highlight rounded-3xl text-background overflow-hidden">
+          <div className="w-full relative px-8 py-20 md:py-28 min-[430px]:px-12 flex items-center justify-end bg-neutralDark rounded-3xl text-background overflow-hidden">
             <div className="w-full h-full absolute right-[50%] lg:right-[55%] xl:right-[50%] top-0 flex items-center justify-center opacity-70 animate-swingX">
               <div className="w-full h-full flex items-center justify-center animate-slowRotate opacity-30 lg:opacity-100">
                 {/* <Image
@@ -111,7 +111,7 @@ const AboutPage = () => {
             <div className="lg:w-[65%] xl:w-1/2">
             {/* <div className="w-full"> */}
               <p className="leading-normal">
-                Our mission is to bridge <span className="text-highlight dark:text-[#5b5b5b] font-semibold">creativity and technology</span>, empowering starting businesses with innovative solutions that are both visually compelling and technically robust.
+                Our mission is to bridge <span className="text-highlight font-semibold">creativity and technology</span>, empowering starting businesses with innovative solutions that are both visually compelling and technically robust.
               </p>
             </div>
           </div>          
