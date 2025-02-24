@@ -118,9 +118,9 @@ const AboutPage = () => {
         </div>
         <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 lg:gap-12 lg:mt-6 max-w-[40ch]">
           <h2 className="leading-normal">Have a game-changing idea? Skip the big agencies</h2>
-          <span className="leading-normal">
+          <p className="leading-normal">
             Our lean team works directly with founders to validate concepts and ship MVPs fast. Through rapid iteration and ruthless prioritization, we deliver products that users love and investors notice—without the overhead and complexity of large agencies. We're built for startups who need beautiful, functional products—without burning runway.
-          </span>
+          </p>
         </div>
         <div className="flex flex-col gap-12 items-center justify-center my-4 mt-6">
           <h1>What we offer</h1>
@@ -188,12 +188,13 @@ const AboutPage = () => {
         </div>
         <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 lg:gap-12 lg:mt-6 max-w-[40ch]">
           <h2 className="leading-normal">We partner with businesses at every stage.</h2>
-          <span className="leading-normal">          
+          <p className="leading-normal">          
             Whether you're a startup exploring innovative possibilities or an established enterprise looking to expand your market reach, we have the expertise to bring your vision to life. Our team combines technical excellence with genuine passion for transforming ideas into impactful solutions. 
             <br/><br/>
-            Ready to discuss your next project? Let's connect for a no-obligation consultation.</span>
+            Ready to discuss your next project? Let's connect for a no-obligation consultation.
+          </p>
         </div>
-        <div className="w-full flex justify-end items-center">
+        <div className="w-full flex justify-end items-center mt-10">
           <Link href='/contact'><div className="w-full flex gap-2 items-center"><h2 className={`font-bold ${styles.contact__highlight}`}>Contact</h2><IconArrowRight size={36} stroke={2.5} /></div></Link>
         </div>
       </div>
