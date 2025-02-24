@@ -1,4 +1,5 @@
 import ReactMarkdown from 'react-markdown';
+import Markdown from '../Markdown/Markdown';
 // import { ColumnContent } from './ColumnContent';
 
 // export function TwoColumnMarkdown({ text }: { text: string }) {
@@ -48,7 +49,7 @@ import ReactMarkdown from 'react-markdown';
 export function TwoColumnMarkdown({ text }: { text: string }) {
     return (
       <div className="lg:columns-2 gap-6 leading-normal">
-        <ReactMarkdown
+        {/* <ReactMarkdown
           components={{
             p: ({ children }) => (
               <p className="mb-6 last:mb-0">{children}</p>
@@ -59,7 +60,10 @@ export function TwoColumnMarkdown({ text }: { text: string }) {
           }}
         >
           {text}
-        </ReactMarkdown>
+        </ReactMarkdown> */}
+        <Markdown>
+          {text}
+        </Markdown>
       </div>
     );
   }
