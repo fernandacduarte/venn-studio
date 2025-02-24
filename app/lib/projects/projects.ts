@@ -1,0 +1,34 @@
+import { ProjectMetadata } from ".";
+
+export const projects: ProjectMetadata[] = [
+    {
+        title: "The Ring AI",
+        subtitle: "One generative AI app to rule them all!!",        
+        images: [],
+        slug: 'the-ring-ai-generative-ai-world-app',
+        description: `The World project is building a global financial and identity network powered by proof of personhood. At its core is World App, a simple crypto wallet through which verified users receive UBI payments in WLD the associated token of the project.
+
+Within World App, mini-apps extend functionality by offering integrated services through an app store. **The Ring AI** is a mini-app that provides seamless access to generative AI technology, where users can pay small fees in WLD to use the cutting-edge benchmark models. This ensures an accessible, Web3-native AI experience for the World App community.
+`,
+        additionalInfo: `**Stage:** MVP. Development of MVP took about 7 weeks.
+
+Learn more by visiting [theringai.xyz](https://theringai.xyz).
+        `
+    },
+    {
+        title: "Deforestation Calculator",
+        subtitle: "Estimating economic damage to the Amazon",
+        images:[],
+        slug: "deforestation-calculator-amazon-damage-estimation-tool",
+        description: `Deforestation in the Amazon is a critical environmental issue, leading to severe biodiversity loss, disruption of ecosystems, and increased carbon emissions. Driven by illegal logging, agriculture, cattle ranching, mining, and infrastructure development, it also threatens indigenous communities livelyhoods. The Amazon plays a crucial role in regulating global weather patterns and storing carbon, making its preservation essential for planetary health. Urgent action is needed to enforce conservation policies, promote sustainable land use, and curb deforestation to protect this vital ecosystem.
+        
+We helped the **Conservation Strategy Fund** develop an online tool based on their own methodology to estimate the economic loss of instances of deforestation in the great Amazon rainforest.
+        `,
+        additionalInfo: `*Client:* Conservation Strategy Fund.
+        
+*External Links:*
+- [Deforestation Calculator](https://deforestationcalculator.conservation-strategy.org/) 
+- [Conservation Strategy Fund](https://www.conservation-strategy.org/)
+        `
+    } 
+].map((project, index) => ({ ...project, index }));
