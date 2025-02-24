@@ -17,7 +17,7 @@ const Navbar = () => {
       <Link href='/'>
         <div className="flex gap-3 items-center cursor-pointer">
           <Image
-            src={'images/venn-logo2.svg'}
+            src={'/images/venn-logo2.svg'}
             alt="Logo"
             width={36}
             height={36}
