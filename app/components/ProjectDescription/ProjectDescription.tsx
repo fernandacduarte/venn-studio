@@ -5,6 +5,7 @@ import styles from "./ProjectDescription.module.css";
 import ReactMarkdown from 'react-markdown';
 import Markdown from "../Markdown/Markdown";
 import { quantity, ProjectMetadata, projects } from "@/app/lib/projects";
+import SlowMotion from "../SlowMotion/SlowMotion";
 
 interface ProjectDescriptionProps extends ProjectMetadata {
     index: number
@@ -34,11 +35,15 @@ export default function ProjectDescription ({
                 <div className="relative w-full rounded-xl p-10 bg-gray-300 overflow-hidden"
                 style={{ boxShadow: 'rgba(149, 157, 165, 0.3) 0px 4px 24px' }}
                 >
-                    <img
-                    src="/images/uuundulate9-dark.svg"
-                    alt="background"
-                    className="absolute w-[800px] right-0 top-[50%] -translate-y-1/2 translate-x-1/3 opacity-30"
-                    />
+                    <div className="absolute w-[800px] right-0 top-[50%] -translate-y-1/2 translate-x-1/3 opacity-30">
+                        <SlowMotion className="w-full">
+                            <img
+                            src="/images/uuundulate9-dark.svg"
+                            alt="background"
+                            className="w-full"
+                            />
+                        </SlowMotion>
+                    </div>
                     <h2 className="text-balance leading-normal">{subtitle}</h2>
                 </div>
                 <TwoColumnMarkdown text={description} />
