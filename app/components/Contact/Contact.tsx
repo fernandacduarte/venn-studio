@@ -3,6 +3,7 @@ import { IconArrowUpRight } from "@tabler/icons-react";
 import SimpleCard from "../SimpleCard/SimpleCard";
 import Link from "next/link";
 import styles from "./Contact.module.css"
+import { AvailableNowIcon } from "../Icons/Icons";
 
 const Contact = () => {
   return (
@@ -38,33 +39,3 @@ const Contact = () => {
 
 export default Contact;
 
-const AvailableNowIcon = () => {
-  return (
-    <div className="relative">
-      <div className={''}>
-        <svg width="10" height="10" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_209_2)">
-          <circle cx="52" cy="52" r="52" fill="#F03D3D"/>
-          </g>
-          <defs>
-          <clipPath id="clip0_209_2">
-          <rect width="104" height="104" fill="white"/>
-          </clipPath>
-          </defs>
-        </svg>
-      </div>
-      <div className={styles.dotFlashOut}>
-        <svg width="10" height="10" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_209_2)">
-          <circle cx="52" cy="52" r="52" fill="#F03D3D"/>
-          </g>
-          <defs>
-          <clipPath id="clip0_209_2">
-          <rect width="104" height="104" fill="white"/>
-          </clipPath>
-          </defs>
-        </svg>
-      </div>
-    </div>    
-  )
-}
