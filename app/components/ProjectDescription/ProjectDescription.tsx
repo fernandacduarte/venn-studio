@@ -31,15 +31,15 @@ export default function ProjectDescription ({
                 alt="img"
                 className="w-full max-w-[830px] mx-auto"
                 />
-                <div className="relative w-full rounded-xl p-10 bg-gray-300"
+                <div className="relative w-full rounded-xl p-10 bg-gray-300 overflow-hidden"
                 style={{ boxShadow: 'rgba(149, 157, 165, 0.3) 0px 4px 24px' }}
                 >
                     <img
-                    src="/images/uuundulate.svg"
+                    src="/images/uuundulate9-dark.svg"
                     alt="background"
-                    className="absolute w-[50%] max-w-[500px] right-0 top-[50%] -translate-y-1/2"
+                    className="absolute w-[800px] right-0 top-[50%] -translate-y-1/2 translate-x-1/3 opacity-30"
                     />
-                    <h2>{subtitle}</h2>
+                    <h2 className="text-balance leading-normal">{subtitle}</h2>
                 </div>
                 <TwoColumnMarkdown text={description} />
                 <div className="mx-auto bg-current opacity-30 h-px w-[75%] max-w-[490px]"></div>
