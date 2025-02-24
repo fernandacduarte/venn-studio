@@ -13,7 +13,8 @@
     "next": "14.2.11",
     "react": "^18",
     "react-dom": "^18",
-    "react-markdown": "^10.0.0"
+    "react-markdown": "^10.0.0",
+    "react-responsive-3d-carousel": "^2.1.5"
   },
   "devDependencies": {
     "@types/node": "^20",

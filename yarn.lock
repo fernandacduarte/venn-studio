@@ -2742,6 +2742,11 @@ react-markdown@^10.0.0:
     unist-util-visit "^5.0.0"
     vfile "^6.0.0"
 
+react-responsive-3d-carousel@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/react-responsive-3d-carousel/-/react-responsive-3d-carousel-2.1.5.tgz#48f4ca41380177cd9398e082cb9d42536db54762"
+  integrity sha512-bdXVVdDiYupIIRk9EPxaa2gM0TsD6N++qYdO14YRO3+IWNX88MC3mJSsTAALT7p1GY9Y5mFW9LUJ+shVooKx3w==
+
 react@^18:
   version "18.3.1"
   resolved "https://registry.yarnpkg.com/react/-/react-18.3.1.tgz#49ab892009c53933625bd16b2533fc754cab2891"
