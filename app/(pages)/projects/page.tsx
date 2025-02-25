@@ -1,13 +1,14 @@
 import ProjectCard from "@/app/components/ProjectCard/ProjectCard";
 import Image from "next/image";
 import { projects, resolveProjectsPathname } from "@/app/lib/projects";
+import HighlightLink from "@/app/components/HighlightLink/HighlightLink";
 
 const ProjectsPage = () => {
   return (
     <div className="relative animate-fadeIn w-full max-w-screen-2xl mx-auto p-4 min-[375px]:p-6 md:px-16 lg:px-fluid-16-64 flex gap-6 flex-grow items-stretch">
-      <div className="w-full flex flex-col gap-14 flex-grow mt-12">
+      <div className="w-full flex flex-col gap-14 flex-grow md:mt-8 xl:mt-12">
         <h1>Project Selection</h1>
-        <div className="w-full flex flex-wrap gap-6 justify-center">
+        <div className="w-full flex flex-wrap gap-6 xl:gap-8 justify-center">
           {projects.map((item, index) => (
             <ProjectCard
             key={item.title}
@@ -34,6 +35,9 @@ const ProjectsPage = () => {
             }
             />
           ))}                  
+        </div>
+        <div className="w-full flex justify-end mt-10 md:mt-16 xl:mt-20">
+          <HighlightLink name="Contact" href="/contact" />
         </div>
       </div>
     </div>
