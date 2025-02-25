@@ -28,15 +28,13 @@ Learn more by visiting [theringai.xyz](https://theringai.xyz).
                 "/images/projects/the-ring-ai/the-ring-ai-promo-1.png"
         ],
         slug: "deforestation-calculator-amazon-damage-estimation-tool",
-        description: `Deforestation in the Amazon is a critical environmental issue, leading to severe biodiversity loss, disruption of ecosystems, and increased carbon emissions. Driven by illegal logging, agriculture, cattle ranching, mining, and infrastructure development, it also threatens indigenous communities livelyhoods. The Amazon plays a crucial role in regulating global weather patterns and storing carbon, making its preservation essential for planetary health. Urgent action is needed to enforce conservation policies, promote sustainable land use, and curb deforestation to protect this vital ecosystem.
+        description: `Deforestation in the Amazon is a critical environmental issue that leads not only to severe biodiversity loss, disruption of ecosystems, and increased carbon concentration in the atmosphere, but also threatens indigenous communities livelyhoods. The Amazon plays a crucial role in regulating global weather patterns and storing carbon, making its preservation essential for planetary health. Urgent action is needed to enforce conservation policies, promote sustainable land use, and curb deforestation to protect this vital ecosystem.
         
 We helped the **Conservation Strategy Fund** develop an online tool based on their own methodology to estimate the economic loss of instances of deforestation in the great Amazon rainforest.
         `,
         additionalInfo: `*Client:* Conservation Strategy Fund.
         
-*External Links:*
-- [Deforestation Calculator](https://deforestationcalculator.conservation-strategy.org/) 
-- [Conservation Strategy Fund](https://www.conservation-strategy.org/)
+Learn mote at [Deforestation Calculator](https://deforestationcalculator.conservation-strategy.org/) and [Conservation Strategy Fund](https://www.conservation-strategy.org/)
         `
     } 
 ].map((project, index) => ({ ...project, index }));
