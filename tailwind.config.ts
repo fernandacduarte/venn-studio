@@ -55,6 +55,11 @@ const config: Config = {
         smallTranslateY : {
           '0%': { transform: 'translateY(-2%)' },
           '100%': { transform: 'translateY(2%)'}
+        },
+        glow: {
+          '0%': { opacity: '0.5' },
+          '50%': { opacity: '0.9' },
+          '100%': { opacity: '0.5' }
         }
       },
       animation: {
@@ -65,6 +70,7 @@ const config: Config = {
         slowRotate: 'rotate10deg 20s infinite alternate',
         swingX: 'smallTranslateX 12s infinite alternate',
         swingY: 'smallTranslateY 12s infinite alternate',
+        slowGlow: 'glow 8s infinite alternate'
       },
       padding: {
         // min: 1024px, max: 1440px
