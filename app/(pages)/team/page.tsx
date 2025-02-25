@@ -1,4 +1,4 @@
-// import { IconArrowLeft } from "@tabler/icons-react";
+import { IconArrowLeft } from "@tabler/icons-react";
 // import Link from "next/link";
 import { IconBrandLinkedin, IconBrandX } from '@tabler/icons-react';
 import styles from './page.module.css'
@@ -10,23 +10,21 @@ import HighlightLink from '@/app/components/HighlightLink/HighlightLink';
 
 const TeamsPage = () => {
   return (
-    <div className="animate-fadeIn w-full max-w-screen-2xl mx-auto flex gap-6 flex-grow items-stretch px-4 min-[375px]:px-6 md:px-16 lg:px-fluid-16-64">
-      <div className="h-full w-full flex flex-col gap-8 md:gap-12 xl:gap-20 md:gap-16 flex-grow md:mt-8 xl:mt-12">
-        {/* <Link href="/"><div className="w-full flex gap-2 opacity-70"><IconArrowLeft strokeWidth={1.2}/><span className="">Home</span></div></Link> */}
-        {/* <div>
-          <span className="text-6xl font-[family-name:var(--font-panamera-bold)] ">Projects</span>
-        </div> */}        
+    <div className="animate-fadeIn w-full max-w-screen-2xl mx-auto flex gap-6 flex-grow items-stretch px-4 min-[375px]:px-6 md:px-16 lg:px-fluid-16-64 overflow-hidden">
+      <div className="h-full w-full flex flex-col gap-12 md:gap-14 xl:gap-20 md:gap-16 flex-grow md:mt-8 xl:mt-12">
         <h1>Meet the team</h1>
-        <div className='flex flex-wrap justify-center gap-6 md:gap-8 xl:gap-12'>
+        <div className='flex flex-wrap justify-center gap-10 xl:gap-12'>
 
-          <div className='w-full max-w-[530px] flex flex-col items-center gap-10 md:gap-12 xl:gap-16 p-10'>
-            <div className='relative'>
-              <div className='absolute z-0 top-0 left-0 -translate-y-[20%] -translate-x-[20%]'>
+          <div className='w-full max-w-[530px] flex flex-col items-center gap-10 md:gap-12 xl:gap-16 min-[360px]:p-6 md:p-10'>
+            <div className='w-full relative'>
+              <div className='absolute z-0 top-0 left-0 right-0 mx-auto -translate-y-[12%] -translate-x-[12%] md:-translate-y-[20%] md:-translate-x-[20%] w-fit animate-slowGlow'>
                 <div className='animate-swingY'>
-                  <div className='bg-gray-300 opacity-30 rounded-full w-[300px] h-[300px] animate-swingX'></div>
+                  <div className='bg-slate-400 opacity-30 rounded-full w-[300px] h-[300px] animate-swingX'></div>
                 </div>
               </div>
-              <div className='relative z-10 w-[285px] h-[285px] rounded-full bg-foreground overflow-hidden grayscale'>
+              <div className='relative mx-auto z-10 w-full max-w-[285px] rounded-full bg-foreground overflow-hidden grayscale'
+              style={{ aspectRatio: 1 }}
+              >
                 <Image
                   src='/images/mugs/be.png'
                   alt="Bernardo's mugshot"
@@ -38,7 +36,7 @@ const TeamsPage = () => {
             <div className='flex flex-col items-start gap-2'>
               <h2>Bernardo Franceschin</h2>
               <span className='text-base md:text-lg xl:text-[22px] font-light'>Founding member, full-stack developer, smart contract engineer.</span>
-              <div className='w-full flex justify-end gap-4 p-4'>
+              <div className='w-full flex justify-end gap-6 p-4'>
                 <a href="" className='w-6 text-[1.5rem] md:text-[1.75rem] text-[2rem] opacity-70 hover:opacity-100'>
                   <IconBrandLinkedin size={'1em'}/>
                 </a>
@@ -49,14 +47,16 @@ const TeamsPage = () => {
             </div>
           </div>
 
-          <div className='w-full max-w-[530px] flex flex-col items-center gap-10 md:gap-12 xl:gap-16 p-10'>
-            <div className='relative'>
-              <div className='absolute z-0 top-0 left-0 -translate-y-[20%] translate-x-[20%]'>
+          <div className='w-full max-w-[530px] flex flex-col items-center gap-10 md:gap-12 xl:gap-16 min-[360px]:p-6 md:p-10'>
+            <div className='w-full relative'>
+              <div className='absolute z-0 top-0 left-0 right-0 mx-auto -translate-y-[12%] translate-x-[10%] md:-translate-y-[20%] md:translate-x-[20%] w-fit animate-slowGlow'>
                 <div className='animate-swingY'>
-                  <div className='bg-gray-300 opacity-30 rounded-full w-[300px] h-[300px] animate-swingX'></div>
+                  <div className='bg-slate-400 opacity-30 rounded-full w-[300px] h-[300px] animate-swingX'></div>
                 </div>
               </div>
-              <div className='relative z-10 w-[285px] h-[285px] rounded-full bg-foreground overflow-hidden grayscale'>
+              <div className='relative z-10 w-full max-w-[285px] mx-auto rounded-full bg-foreground overflow-hidden grayscale'
+              style={{ aspectRatio: 1 }}
+              >
                 <Image
                 src='/images/mugs/pedro.png'
                 alt="Pedro's mugshot"
@@ -79,14 +79,16 @@ const TeamsPage = () => {
             </div>
           </div>
 
-          <div className='w-full max-w-[530px] flex flex-col items-center gap-10 md:gap-12 xl:gap-16 p-10'>
-            <div className='relative'>
-              <div className='absolute z-0 top-0 left-0 translate-y-[12%] translate-x-[20%]'>
+          <div className='w-full max-w-[530px] flex flex-col items-center gap-10 md:gap-12 xl:gap-16 min-[360px]:p-6 md:p-10'>
+            <div className='w-full relative z-0'>
+              <div className='absolute z-0 top-0 left-0 right-0 mx-auto translate-y-[8%] md:translate-y-[12%] -translate-x-[12%] md:-translate-x-[20%] w-fit animate-slowGlow'>
                 <div className='animate-swingY'>
-                  <div className='bg-gray-300 opacity-30 rounded-full w-[300px] h-[300px] animate-swingX'></div>
+                  <div className='bg-slate-400 opacity-30 rounded-full w-[300px] h-[300px] animate-swingX'></div>
                 </div>
               </div>
-              <div className='relative z-10 w-[285px] h-[285px] rounded-full bg-foreground overflow-hidden'>
+              <div className='relative z-10 w-full max-w-[285px] mx-auto rounded-full bg-foreground overflow-hidden'
+              style={{ aspectRatio: 1 }}
+              >
                 <Image
                   src='/images/mugs/fe.png'
                   alt="Fernanda's mugshot"
@@ -95,7 +97,7 @@ const TeamsPage = () => {
                   />
               </div>
             </div>
-            <div className='flex flex-col items-start gap-2'>
+            <div className='relative z-10 flex flex-col items-start gap-2'>
               <h2>Fernanda Duarte</h2>
               <span className='text-base md:text-lg xl:text-[22px] font-light'>Founding member, front-end developer, ux/ui engineer, designer.</span>
               <div className='w-full flex justify-end gap-4 p-4'>
@@ -111,7 +113,7 @@ const TeamsPage = () => {
 
         
         </div>
-        <div className='w-full flex justify-end'>
+        <div className='w-full flex justify-end mt-10'>
           <HighlightLink name='Contact us' href='/contact'/>
         </div>
         {/* <div className="w-full h-full flex flex-col lg:flex-row justify-center items-center relative">
