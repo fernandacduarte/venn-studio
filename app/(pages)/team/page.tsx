@@ -22,7 +22,7 @@ const TeamsPage = () => {
                   <div className='bg-slate-400 opacity-30 rounded-full w-[300px] h-[300px] animate-swingX'></div>
                 </div>
               </div>
-              <div className='relative mx-auto z-10 w-full max-w-[285px] rounded-full bg-foreground overflow-hidden grayscale'
+              <div className='relative mx-auto z-10 w-full max-w-[285px] rounded-full bg-gradient-to-b from-[#121717] to-[#696969] overflow-hidden grayscale'
               style={{ aspectRatio: 1 }}
               >
                 <Image
@@ -54,7 +54,7 @@ const TeamsPage = () => {
                   <div className='bg-slate-400 opacity-30 rounded-full w-[300px] h-[300px] animate-swingX'></div>
                 </div>
               </div>
-              <div className='relative z-10 w-full max-w-[285px] mx-auto rounded-full bg-foreground overflow-hidden grayscale'
+              <div className='relative z-10 w-full max-w-[285px] mx-auto rounded-full bg-gradient-to-b from-[#121717] to-[#696969] overflow-hidden grayscale'
               style={{ aspectRatio: 1 }}
               >
                 <Image
@@ -86,7 +86,7 @@ const TeamsPage = () => {
                   <div className='bg-slate-400 opacity-30 rounded-full w-[300px] h-[300px] animate-swingX'></div>
                 </div>
               </div>
-              <div className='relative z-10 w-full max-w-[285px] mx-auto rounded-full bg-foreground overflow-hidden'
+              <div className='relative z-10 w-full max-w-[285px] mx-auto rounded-full bg-gradient-to-b from-[#121717] to-[#696969] overflow-hidden'
               style={{ aspectRatio: 1 }}
               >
                 <Image
