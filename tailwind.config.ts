@@ -49,8 +49,12 @@ const config: Config = {
           '100%': {transform: 'rotate(2.5deg)'}
         },
         smallTranslateX : {
-          '0%': { transform: 'translateX(-1%)' },
-          '100%': { transform: 'translateX(1%)'}
+          '0%': { transform: 'translateX(-2%)' },
+          '100%': { transform: 'translateX(2%)'}
+        },
+        smallTranslateY : {
+          '0%': { transform: 'translateY(-2%)' },
+          '100%': { transform: 'translateY(2%)'}
         }
       },
       animation: {
@@ -59,7 +63,8 @@ const config: Config = {
         carousel: 'slide 10s linear infinite',
         slowScale: 'scale 10s linear 1s infinite alternate',
         slowRotate: 'rotate10deg 20s infinite alternate',
-        swingX: 'smallTranslateX 12s infinite alternate'
+        swingX: 'smallTranslateX 12s infinite alternate',
+        swingY: 'smallTranslateY 12s infinite alternate',
       },
       padding: {
         // min: 1024px, max: 1440px
