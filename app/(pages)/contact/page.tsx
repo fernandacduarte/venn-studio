@@ -1,13 +1,13 @@
 // import { IconArrowLeft } from "@tabler/icons-react";
 // import Link from "next/link";
-import { IconMail, IconCalendar } from '@tabler/icons-react';
+import { IconCalendar } from '@tabler/icons-react';
 import styles from './page.module.css'
 import { AvailableNowIcon } from '@/app/components/Icons/Icons';
 
 const ContactPage = () => {
   return (
     <div className="animate-fadeIn w-full max-w-screen-2xl mx-auto p-4 min-[375px]:p-6 md:px-16 lg:px-fluid-16-64 flex gap-6 flex-grow items-stretch text-xl md:text-2xl lg:text-[30px]">
-      <div className="w-full flex flex-col gap-14 flex-grow mt-12">
+      <div className="w-full flex flex-col gap-10 md:gap-14 xl:gap-20 flex-grow md:mt-8 xl:mt-12">
         {/* <Link href="/"><div className="w-full flex gap-2 opacity-70"><IconArrowLeft strokeWidth={1.2}/><span className="">Home</span></div></Link> */}
         {/* <div>
           <span className="text-6xl font-[family-name:var(--font-panamera-bold)] ">Projects</span>
@@ -16,7 +16,7 @@ const ContactPage = () => {
           <h1>Contact us!</h1>
           {/* <p className='leading-normal'>Ready to discuss your next project? Let's connect for a no-obligation consultation.</p> */}
         </div>
-        <div className='w-full flex flex-col flex-1 gap-10 justify-center items-center mt-6'>
+        <div className='w-full flex flex-col flex-1 gap-10 justify-center items-center md:mt-6'>
           <p className='leading-normal max-w-[30ch] text-center'>Ready to discuss your next project? Let's connect for a no-obligation consultation.</p>
           <div className='flex flex-col gap-6 items-center'>
             <div className='flex gap-2 items-center'><AvailableNowIcon/><span className='text-xs md:text-sm lg:text-base font-semibold opacity-70'>Slots availabe</span></div>
