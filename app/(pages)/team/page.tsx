@@ -36,11 +36,11 @@ const TeamsPage = () => {
             <div className='flex flex-col items-start gap-2'>
               <h2>Bernardo Franceschin</h2>
               <span className='text-base md:text-lg xl:text-[22px] font-light'>Founding member, full-stack developer, smart contract engineer.</span>
-              <div className='w-full flex justify-end gap-6 p-4'>
-                <a href="" className='w-6 text-[1.5rem] md:text-[1.75rem] text-[2rem] opacity-70 hover:opacity-100'>
+              <div className='w-full flex justify-start gap-8 py-2 md:py-4'>
+                <a href="" className='w-6 text-[1.5rem] md:text-[1.75rem] xl:text-[2rem] opacity-70 hover:opacity-100'>
                   <IconBrandLinkedin size={'1em'}/>
                 </a>
-                <a href="" className='w-6 text-[1.5rem] md:text-[1.75rem] text-[2rem] opacity-70 hover:opacity-100'>
+                <a href="" className='w-6 text-[1.5rem] md:text-[1.75rem] xl:text-[2rem] opacity-70 hover:opacity-100'>
                   <IconBrandX size={'1em'}/>
                 </a>
               </div>
@@ -68,11 +68,11 @@ const TeamsPage = () => {
             <div className='flex flex-col items-start gap-2'>
               <h2>Pedro Franceschin</h2>
               <span className='text-base md:text-lg xl:text-[22px] font-light'>Founding member, full-stack developer, smart contract engineer.</span>
-              <div className='w-full flex justify-end gap-4 p-4'>
-                <a href="" className='w-6 text-[1.5rem] md:text-[1.75rem] text-[2rem] opacity-70 hover:opacity-100'>
+              <div className='w-full flex justify-start gap-8 py-2 md:py-4'>
+                <a href="" className='w-6 text-[1.5rem] md:text-[1.75rem] xl:text-[2rem] opacity-70 hover:opacity-100'>
                   <IconBrandLinkedin size={'1em'}/>
                 </a>
-                <a href="" className='w-6 text-[1.5rem] md:text-[1.75rem] text-[2rem] opacity-70 hover:opacity-100'>
+                <a href="" className='w-6 text-[1.5rem] md:text-[1.75rem] xl:text-[2rem] opacity-70 hover:opacity-100'>
                   <IconBrandX size={'1em'}/>
                 </a>
               </div>
@@ -100,11 +100,11 @@ const TeamsPage = () => {
             <div className='relative z-10 flex flex-col items-start gap-2'>
               <h2>Fernanda Duarte</h2>
               <span className='text-base md:text-lg xl:text-[22px] font-light'>Founding member, front-end developer, ux/ui engineer, designer.</span>
-              <div className='w-full flex justify-end gap-4 p-4'>
-                <a href="" className='w-6 text-[1.5rem] md:text-[1.75rem] text-[2rem] opacity-70 hover:opacity-100'>
+              <div className='w-full flex justify-start gap-8 py-2 md:py-4'>
+                <a href="" className='w-6 text-[1.5rem] md:text-[1.75rem] xl:text-[2rem] opacity-70 hover:opacity-100'>
                   <IconBrandLinkedin size={'1em'}/>
                 </a>
-                <a href="" className='w-6 text-[1.5rem] md:text-[1.75rem] text-[2rem] opacity-70 hover:opacity-100'>
+                <a href="" className='w-6 text-[1.5rem] md:text-[1.75rem] xl:text-[2rem] opacity-70 hover:opacity-100'>
                   <IconBrandX size={'1em'}/>
                 </a>
               </div>
@@ -113,8 +113,8 @@ const TeamsPage = () => {
 
         
         </div>
-        <div className='w-full flex justify-end mt-10'>
-          <HighlightLink name='Contact us' href='/contact'/>
+        <div className="w-full flex justify-end mt-10 md:mt-16 xl:mt-20">
+          <HighlightLink name="Contact" href="/contact" />
         </div>
         {/* <div className="w-full h-full flex flex-col lg:flex-row justify-center items-center relative">
           <div className="w-full lg:w-1/3 flex flex-col justify-center items-center group">
