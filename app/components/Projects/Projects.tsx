@@ -46,8 +46,11 @@ const Projects = () => {
           <div className="w-full flex justify-end items-end">
             {/* <span className="relative font-[family-name:var(--font-panamera-medium)] text-5xl">Projects</span> */}
             {/* <span className="font-medium text-3xl min-[500px]:text-4xl lg:text-5xl">Projects</span> */}
-            <div className="w-[10ch] h-[2.25rem] min-[500px]:h-[2.65rem] lg:h-[3.25rem] font-medium text-3xl min-[500px]:text-4xl lg:text-5xl">
+            {/* <div className="w-[10ch] h-[2.25rem] min-[500px]:h-[2.65rem] lg:h-[3.25rem] font-medium text-3xl min-[500px]:text-4xl lg:text-5xl">
               <Carousel items={carouselItems} />
+            </div> */}
+            <div className="font-medium text-3xl min-[500px]:text-4xl lg:text-5xl">
+              Projects
             </div>
           </div>
         </div>
