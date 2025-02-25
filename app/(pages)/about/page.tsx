@@ -6,6 +6,7 @@ import { BackgrounSVG } from "./graphics";
 import { Carousel } from "react-responsive-3d-carousel";
 import 'react-responsive-3d-carousel/dist/styles.css';
 import { IconBlockchain, IconAI } from "@/app/components/Icons/Icons";
+import HighlightLink from "@/app/components/HighlightLink/HighlightLink";
 
 // highlight color: #D3EF8A
 
@@ -228,8 +229,8 @@ const AboutPage = () => {
             Ready to discuss your next project? Let's connect for a no-obligation consultation.
           </p>
         </div>
-        <div className="w-full flex justify-end items-center mt-10">
-          <Link href='/contact'><div className="w-full flex gap-2 items-center"><h2 className={`${styles.contact__highlight}`}>Contact</h2><IconArrowRight size={36} stroke={2.5} /></div></Link>
+        <div className="w-full flex justify-end items-center mt-10 md:mt-16 xl:mt-20">
+          <HighlightLink name="Contact" href="/contact"/>
         </div>
       </div>
     </div>
