@@ -13,7 +13,7 @@ const TeamsPage = () => {
     <div className="animate-fadeIn w-full max-w-screen-2xl mx-auto flex gap-6 flex-grow items-stretch px-4 min-[375px]:px-6 md:px-16 lg:px-fluid-16-64 overflow-hidden">
       <div className="h-full w-full flex flex-col gap-12 md:gap-14 xl:gap-20 md:gap-16 flex-grow md:mt-8 xl:mt-12">
         <h1>Meet the team</h1>
-        <div className='flex flex-wrap justify-center gap-10 xl:gap-12'>
+        <div className='flex flex-wrap justify-center gap-10 xl:gap-12 mt-6'>
 
           <div className='w-full max-w-[530px] flex flex-col items-center gap-10 md:gap-12 xl:gap-16 min-[360px]:p-6 md:p-10'>
             <div className='w-full relative'>
