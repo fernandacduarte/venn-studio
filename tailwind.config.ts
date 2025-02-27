@@ -67,10 +67,10 @@ const config: Config = {
         pulse: 'pulse 2s ease-out infinite',
         carousel: 'slide 10s linear infinite',
         slowScale: 'scale 10s linear 1s infinite alternate',
-        slowRotate: 'rotate10deg 20s infinite alternate',
-        swingX: 'smallTranslateX 12s infinite alternate',
-        swingY: 'smallTranslateY 12s infinite alternate',
-        slowGlow: 'glow 8s infinite alternate'
+        slowRotate: 'rotate10deg 16s infinite alternate',
+        swingX: 'smallTranslateX 8s infinite alternate',
+        swingY: 'smallTranslateY 8s infinite alternate',
+        slowGlow: 'glow 6s infinite alternate'
       },
       padding: {
         // min: 1024px, max: 1440px
