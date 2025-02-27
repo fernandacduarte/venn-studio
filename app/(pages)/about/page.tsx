@@ -1,7 +1,7 @@
 'use client'
-import { IconArrowRight, IconPalette, IconStack2Filled, IconStackFront, IconTable, IconUserSquare, IconUserStar, } from "@tabler/icons-react";
+import { IconStackFront, IconTable, IconUserStar, } from "@tabler/icons-react";
 import styles from './page.module.css'
-import Link from "next/link";
+// import Link from "next/link";
 import { BackgrounSVG } from "./graphics";
 import { Carousel } from "react-responsive-3d-carousel";
 import 'react-responsive-3d-carousel/dist/styles.css';
@@ -76,30 +76,35 @@ function Card ({
 }
 
 const carouselItems = [
-  <Card 
-  icon={<div className="text-[135px] md:text-[150px] lg:text-[180px]"><IconStackFront size={'1em'}/></div>}
-  title="Full-Stack Development"
-  description="We craft end-to-end web solutions, handling everything from frontend aesthetics to backend logic."
+  <Card
+    key={'card-0'}
+    icon={<div className="text-[135px] md:text-[150px] lg:text-[180px]"><IconStackFront size={'1em'}/></div>}
+    title="Full-Stack Development"
+    description="We craft end-to-end web solutions, handling everything from frontend aesthetics to backend logic."
   />,
   <Card
-  icon={<div className="text-[72px] md:text-[80px] lg:text-[96px]"><IconTable size={'1em'} stroke={2}/></div>}
-  title="UI/UX Design"
-  description="Our design team creates user-friendly interfaces that are not only visually appealing but also intuitive and engaging, making every interaction count."
+    key={'card-1'}
+    icon={<div className="text-[72px] md:text-[80px] lg:text-[96px]"><IconTable size={'1em'} stroke={2}/></div>}
+    title="UI/UX Design"
+    description="Our design team creates user-friendly interfaces that are not only visually appealing but also intuitive and engaging, making every interaction count."
   />,
   <Card
-  icon={<IconAI className="w-[72px] md:w-[80px] lg:w-[96px]"/>}
-  title={"AI tools"}
-  description="We integrate cutting-edge AI models to supercharge your product, with everything tailored precisely to your use case."
+    key={'card-2'}
+    icon={<IconAI className="w-[72px] md:w-[80px] lg:w-[96px]"/>}
+    title={"AI tools"}
+    description="We integrate cutting-edge AI models to supercharge your product, with everything tailored precisely to your use case."
   />,
   <Card
-  icon={<IconBlockchain className="w-[82px] md:w-[91px] lg:w-[110px]"/>}
-  title="Blockchain Integration"
-  description="Evaluating blockchain for your product? We help businesses make the right call, then build it right—using industry-leading Web3 tools and protocols."
+    key={'card-3'}
+    icon={<IconBlockchain className="w-[82px] md:w-[91px] lg:w-[110px]"/>}
+    title="Blockchain Integration"
+    description="Evaluating blockchain for your product? We help businesses make the right call, then build it right—using industry-leading Web3 tools and protocols."
   />,
   <Card
-  icon={<div className="text-[72px] md:text-[80px] lg:text-[96px]"><IconUserStar size={'1em'}/></div>}
-  title="Customized products"
-  description="We tailor our services to your specific needs, ensuring that every project is built to fit your goals, budget, and timeline."
+    key={'card-4'}
+    icon={<div className="text-[72px] md:text-[80px] lg:text-[96px]"><IconUserStar size={'1em'}/></div>}
+    title="Customized products"
+    description="We tailor our services to your specific needs, ensuring that every project is built to fit your goals, budget, and timeline."
   />
 ]
 

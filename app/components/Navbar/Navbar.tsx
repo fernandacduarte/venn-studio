@@ -13,7 +13,7 @@ const Navbar = () => {
   //to-do: trocar largura maxima
 
   return (
-    <nav className="h-[90px] w-full max-w-screen-2xl mx-auto text-xl mb-3 py-6 min-[375px]:px-6 px-4  md:px-16 lg:px-fluid-16-64 max-lg-sticky top-0 flex gap-8 justify-between items-center">
+    <nav className="h-[90px] w-full max-w-screen-2xl mx-auto text-xl mb-2 py-6 px-4 min-[375px]:px-6 lg:px-fluid-16-64 max-lg-sticky top-0 flex gap-8 justify-between items-center">
       <Link href='/'>
         <div className="flex gap-3 items-center cursor-pointer">
           <Image

@@ -24,15 +24,17 @@ const About = () => {
   return (
     // <BlurCard backgroundColor="#121717">
       <SimpleCard backgroundColor="linear-gradient(340deg, #121717 50%, #1a2424 100%)">
-        <Link href="/about">
+        <Link href="/about" className="max-[639px]:w-full">
           <div className="flex justify-between items-start text-neutralLight-100">
             {/* <div className="font-[family-name:var(--font-panamera-medium)] flex flex-col gap-2"> */}
             <div className="font-medium flex flex-col gap-2">
               <span className="text-xs sm:text-sm md:text-base tracking-[0.07em]">ABOUT US</span>
               {/* <span className="text-[3.5rem] leading-[4rem] w-full max-w-[20ch] tracking-[0.04em]">We are a <br />Web Development Studio</span> */}
-              <span className="text-[1.75rem] min-[375px]:text-[1.875rem] min-[460px]:text-[2rem] sm:text-[2.25rem] sm:text-[2.5rem] md:text-[2.75rem] lg:text-[3rem] min-[1140px]:text-[3.75rem] font-medium leading-[3rem] sm:leading-[4.5rem] w-full max-w-[20ch] tracking-[0.03em]">We are a Web Development Studio</span>
+              <span className="text-[1.75rem] min-[375px]:text-[1.875rem] min-[460px]:text-[2rem] sm:text-[2.5rem] md:text-[3rem] min-[940px]:text-[3.3rem] lg:text-[3rem] min-[1140px]:text-[3.75rem] font-medium leading-[3rem] sm:leading-[4rem] min-[940px]:leading-[4.4rem] lg:leading-[4.7rem] w-full max-w-[20ch] tracking-[0.03em]">
+                We are a Web Development Studio
+              </span>
             </div>
-            <div className="h-full mt-[-16px] text-[4rem] min-[500px]:text-[4.5rem] md:text-[5rem]">
+            <div className="h-full mt-[-16px] text-[4rem] min-[500px]:text-[4.5rem] md:text-[5rem] max-[639px]:mr-[-20px]">
               <IconArrowUpRight size={'1em'} strokeWidth={1} />
             </div>
           </div>
@@ -127,10 +129,10 @@ const About = () => {
             />
           </div> */}
           <div 
-            className={`w-[120%] h-[180%] absolute top-[-5%] left-0 opacity-70 flex justify-center items-center animate-slowScale`} 
+            className={`w-[120%] h-[180%] absolute top-[-5%] left-0 opacity-70 flex justify-center items-center animate-slowScale opacity-40 lg:opacity-80`} 
             style={{  }}
           >
-            <div className='w-full h-full animate-swingX'>
+            <div className='w-full h-full'>
               <div className='w-full h-full animate-slowRotate'>
                 <Image
                   style={{

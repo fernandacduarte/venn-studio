@@ -79,7 +79,7 @@ export const AvailableNowIcon = () => {
         <div className={''}>
           <svg width="10" height="10" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_209_2)">
-            <circle cx="52" cy="52" r="52" fill="#F03D3D"/>
+            <circle cx="52" cy="52" r="52" fill="#04A777"/>
             </g>
             <defs>
             <clipPath id="clip0_209_2">
@@ -91,7 +91,7 @@ export const AvailableNowIcon = () => {
         <div className={styles.dotFlashOut}>
           <svg width="10" height="10" viewBox="0 0 104 104" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_209_2)">
-            <circle cx="52" cy="52" r="52" fill="#F03D3D"/>
+            <circle cx="52" cy="52" r="52" fill="#04A777"/>
             </g>
             <defs>
             <clipPath id="clip0_209_2">
