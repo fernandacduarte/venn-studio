@@ -24,6 +24,6 @@
 }
 
 .parent:hover .contact__highlight::before {
-  height: 44px;
+  height: 56px;
 }
 
