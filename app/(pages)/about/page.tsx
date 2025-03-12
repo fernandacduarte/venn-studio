@@ -3,10 +3,12 @@ import { IconStackFront, IconTable, IconUserStar, } from "@tabler/icons-react";
 import styles from './page.module.css'
 // import Link from "next/link";
 import { BackgrounSVG } from "./graphics";
-import { Carousel } from "react-responsive-3d-carousel";
+// import { Carousel } from "react-responsive-3d-carousel";
+// import Carousel from 'react-spring-3d-carousel';
 import 'react-responsive-3d-carousel/dist/styles.css';
 import { IconBlockchain, IconAI } from "@/app/components/Icons/Icons";
 import HighlightLink from "@/app/components/HighlightLink/HighlightLink";
+import Carousel3D from "@/app/components/Carousel3D/Carousel3D";
 
 // highlight color: #D3EF8A
 
@@ -62,7 +64,7 @@ function Card ({
   description: string
 }) {
   return (
-      <div className={`${styles.gradientBg} rounded-2xl px-6 py-6 lg:px-10 lg:py-10 flex flex-col gap-6 items-start w-full h-full`}>
+      <div className={`${styles.gradientBg} rounded-2xl px-6 py-6 lg:px-10 lg:py-10 flex flex-col gap-6 items-start w-[280px] min-[400px]:w-[320px] md:w-[360px] lg:w-[460px] h-[332px] md:h-[372px] lg:h-[424px] shrink-0 cursor-pointer`}>
           <div className="w-full flex justify-center">{icon}</div>
           <div className="w-full flex flex-col gap-2 items-start">
               <span className="font-bold">{title}</span>
@@ -108,6 +110,54 @@ const carouselItems = [
   />
 ]
 
+const slides = [
+  {
+    key: 'card-0',
+    content: 
+      <Card
+      icon={<div className="text-[72px] md:text-[80px] lg:text-[96px]"><IconStackFront size={'1em'}/></div>}
+      title="Full-Stack Development"
+      description="We craft end-to-end web solutions, handling everything from frontend aesthetics to backend logic."
+      />
+  },
+  {
+    key: 'card-1',
+    content: 
+      <Card
+      key={'card-1'}
+      icon={<div className="text-[72px] md:text-[80px] lg:text-[96px]"><IconTable size={'1em'} stroke={2}/></div>}
+      title="UI/UX Design"
+      description="Our design team creates user-friendly interfaces that are not only visually appealing but also intuitive and engaging, making every interaction count."
+      />
+  },
+  {
+    key: 'card-2',
+    content: 
+      <Card
+      icon={<IconAI className="w-[72px] md:w-[80px] lg:w-[96px]"/>}
+      title={"AI tools"}
+      description="We integrate cutting-edge AI models to supercharge your product, with everything tailored precisely to your use case."
+      />
+  },
+  {
+    key: 'card-3',
+    content:
+      <Card
+      icon={<IconBlockchain className="w-[82px] md:w-[91px] lg:w-[110px]"/>}
+      title="Blockchain Integration"
+      description="Evaluating blockchain for your product? We help businesses make the right call, then build it right—using industry-leading Web3 tools and protocols."
+      />
+  },
+  {
+    key: 'card-4',
+    content:
+      <Card
+      icon={<div className="text-[72px] md:text-[80px] lg:text-[96px]"><IconUserStar size={'1em'}/></div>}
+      title="Customized products"
+      description="We tailor our services to your specific needs, ensuring that every project is built to fit your goals, budget, and timeline."
+      />
+  }
+]
 
 const AboutPage = () => {
   return (
@@ -158,11 +208,17 @@ const AboutPage = () => {
         </div>
         <div className="flex flex-col items-center justify-center my-4 mt-6">
           <h1>What we offer</h1>
-          <Carousel
+          {/* <Carousel
           items={carouselItems}
           startIndex={0}
           containerHeight="700px"
           height="500px"
+          showStatus={false}
+          /> */}
+          <Carousel3D 
+          className="w-full max-w-[1024px] h-[400px] md:h-[500px] lg:h-[600px] mx-auto "
+          slides={slides}
+          showArrows
           />
           {/* <div className="flex flex-col gap-[6rem] items-center justify-center">
             <div className="flex flex-col min-[430px]:flex-row gap-6 items-center">
@@ -191,8 +247,8 @@ const AboutPage = () => {
               title="Full-Stack Development"
               description="We craft end-to-end web solutions, handling everything from frontend aesthetics to backend logic."
           /> */}
-          {/* <div className="flex flex-col gap-6">
-            <div className="flex gap-6">
+          {/* <div className="mt-8 md:mt-10 xl:mt-12 flex flex-col gap-6 md:gap-8 xl:gap-12">
+            <div className="w-full flex flex-wrap justify-center gap-6 md:gap-8 xl:gap-12">
               <Card 
               icon={<div className="text-[72px] md:text-[80px] lg:text-[96px]"><IconStackFront size={'1em'}/></div>}
               title="Full-Stack Development"
@@ -204,7 +260,7 @@ const AboutPage = () => {
               description="Our design team creates user-friendly interfaces that are not only visually appealing but also intuitive and engaging, making every interaction count."
               />
             </div>
-            <div className="flex gap-6">
+            <div className="w-full flex flex-wrap justify-center gap-6 md:gap-8 xl:gap-12">
               <Card
               icon={<IconAI className="w-[72px] md:w-[80px] lg:w-[96px]"/>}
               title={"AI tools"}
@@ -216,7 +272,7 @@ const AboutPage = () => {
               description="Evaluating blockchain for your product? We help businesses make the right call, then build it right—using industry-leading Web3 tools and protocols."
               />
             </div>
-            <div className="w-full flex justify-center">
+            <div className="w-full flex flex-wrap justify-center gap-6 md:gap-8 xl:gap-12">
               <Card
               icon={<div className="text-[72px] md:text-[80px] lg:text-[96px]"><IconUserStar size={'1em'}/></div>}
               title="Customized products"
