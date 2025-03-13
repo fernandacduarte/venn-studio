@@ -3,7 +3,7 @@ import Carousel from "react-spring-3d-carousel";
 import { useState, useEffect } from "react";
 import { IconChevronCompactLeft } from "@tabler/icons-react";
 
-interface Carousel3DSlide {
+export interface Carousel3DSlide {
     key: string,
     content: React.ReactNode
 }
@@ -67,7 +67,7 @@ export default function Carousel3D ({
                     </button>
                 </div>
             }
-            <div className="w-full h-full overflow-hidden">
+            <div className="w-full h-full ">
                 <Carousel
                 slides={cards}
                 goToSlide={goToSlide}
