@@ -36,6 +36,7 @@ export default function Menu() {
     const [isOpen, setIsOpen] = useState(false);
     const pathname = usePathname();
     const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+    const scrollPositionRef = useRef(0);
 
     const handleClick = useCallback(() => {
         timeoutRef.current = setTimeout(() => {
@@ -47,7 +48,23 @@ export default function Menu() {
         return () => {
             if(timeoutRef.current) clearTimeout(timeoutRef.current);
         }
-    }, [])
+    }, []);
+
+     useEffect(() => {
+         if (isOpen) {
+             // Store current scroll position and disable scroll
+             scrollPositionRef.current = window.scrollY;
+             document.body.style.position = 'fixed';
+             document.body.style.top = `-${scrollPositionRef.current}px`;
+             document.body.style.width = '100%';
+         } else {
+             // Re-enable scroll and restore position
+             document.body.style.position = '';
+             document.body.style.top = '';
+             document.body.style.width = '';
+             window.scrollTo(0, scrollPositionRef.current);
+         }
+     }, [isOpen]);
 
     return (
         <div className={`relative ${isOpen ? 'z-50' : 'z-20'}`}>
