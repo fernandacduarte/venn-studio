@@ -2,40 +2,32 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Children, useState } from "react";
+import { Children, useState, createRef, useRef } from "react";
 
 interface CarouselSwipeableProps {
     className?:string;
     showNavigation?: boolean;
-    children: React.ReactNode
+    children: any
+    settings: any
 }
 export default function CarouselSwipeable ({
     className,
     showNavigation,
-    children
+    children,
+    settings
 }: CarouselSwipeableProps) {
     const [active, setActive] = useState(0);
 
-    const settings = {
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        centerMode: true,
+    const sliderRef = useRef<Slider | null>(null);
+
+    settings = {
+        ...settings,
         beforeChange: (current: number, next: number) => setActive(next),
-        responsive: [
-            {
-              breakpoint: 436,
-              settings: {
-                centerMode: false
-              }
-            }
-        ]
-    };
+    }
 
     return (
         <div className={className}>
-            <Slider {...settings}>
+            <Slider {...settings} ref={slider => { sliderRef.current = slider; }}>
                 {children}
             </Slider>
             {showNavigation &&
