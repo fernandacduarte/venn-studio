@@ -173,14 +173,16 @@ const AboutPage = () => {
           {/* <span className="text-4xl font-extrabold">About us</span> */}
           {/* <span className="text-lg font-bold tracking-[0.035em]">ABOUT US</span> */}
         {/* </div> */}
-        <div className="flex flex-col gap-6 max-w-[30ch] mt-10 md:px-16 min-[375px]:px-6 px-4 lg:px-fluid-16-64">
-          {/* <Link href="/"><div className="w-full flex gap-1 opacity-70"><IconArrowLeft strokeWidth={1.5}/><span className="font-semibold">Back</span></div></Link> */}
-          <h2 className="leading-normal">
-            We turn startup visions into <span className={`${styles.intro__highlight}`}>market-ready MVPs</span> in weeks, not months. 
-          </h2>
-          <p className="leading-normal leading-normal font-light">
-            Our agile and highly skilled team specializes in helping founders validate their ideas and secure early traction through rapid, production-grade prototypes. From concept to launch, we deliver scalable full-stack solutions that grow with your business. 
-          </p>
+        <div className="w-full px-4 md:px-16 min-[375px]:px-6 lg:px-fluid-16-64">
+          <div className="flex flex-col gap-6 max-w-[30ch] mt-10">
+            {/* <Link href="/"><div className="w-full flex gap-1 opacity-70"><IconArrowLeft strokeWidth={1.5}/><span className="font-semibold">Back</span></div></Link> */}
+            <h2 className="leading-normal">
+              We turn startup visions into <span className={`${styles.intro__highlight}`}>market-ready MVPs</span> in weeks, not months. 
+            </h2>
+            <p className="leading-normal leading-normal font-light">
+              Our agile and highly skilled team specializes in helping founders validate their ideas and secure early traction through rapid, production-grade prototypes. From concept to launch, we deliver scalable full-stack solutions that grow with your business. 
+            </p>
+          </div>
         </div>
         <div className="w-full md:px-16 min-[375px]:px-6 px-4 lg:px-fluid-16-64">
           <div className="w-full relative px-8 py-20 md:py-28 min-[430px]:px-12 flex items-center justify-end bg-neutralDark rounded-3xl text-background overflow-hidden">
@@ -205,11 +207,13 @@ const AboutPage = () => {
             </div>
           </div>          
         </div>
-        <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 lg:gap-12 lg:mt-6 max-w-[40ch] md:px-16 min-[375px]:px-6 px-4 lg:px-fluid-16-64">
-          <h2 className="leading-normal">Have a game-changing idea? Skip the big agencies</h2>
-          <p className="leading-normal">
-            Our lean team works directly with founders to validate concepts and ship MVPs fast. Through rapid iteration and ruthless prioritization, we deliver products that users love and investors notice—without the overhead and complexity of large agencies. We're built for startups who need beautiful, functional products—without burning runway.
-          </p>
+        <div className="w-full px-4 md:px-16 min-[375px]:px-6 lg:px-fluid-16-64">
+          <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 lg:gap-12 lg:mt-6 max-w-[40ch]">
+            <h2 className="leading-normal">Have a game-changing idea? Skip the big agencies</h2>
+            <p className="leading-normal">
+              Our lean team works directly with founders to validate concepts and ship MVPs fast. Through rapid iteration and ruthless prioritization, we deliver products that users love and investors notice—without the overhead and complexity of large agencies. We're built for startups who need beautiful, functional products—without burning runway.
+            </p>
+          </div>
         </div>
         <div className="flex flex-col items-center justify-center my-4 mt-6">
           <h1>What we offer</h1>
@@ -335,17 +339,19 @@ const AboutPage = () => {
 
           </div> */}
         </div>
-        <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 lg:gap-12 lg:mt-6 max-w-[40ch] md:px-16 min-[375px]:px-6 px-4 lg:px-fluid-16-64">
-          <h2 className="leading-normal">We partner with businesses at every stage.</h2>
-          <p className="leading-normal">          
-            Whether you're a startup exploring innovative possibilities or an established enterprise looking to expand your market reach, we have the expertise to bring your vision to life. Our team combines technical excellence with genuine passion for transforming ideas into impactful solutions. 
-            <br/><br/>
-            Ready to discuss your next project? Let's connect for a no-obligation consultation.
-          </p>
-        </div>
-        <div className="w-full flex justify-end items-center mt-10 md:mt-16 xl:mt-20 md:px-16 min-[375px]:px-6 px-4 lg:px-fluid-16-64">
-          <HighlightLink name="Contact" href="/contact"/>
-        </div>
+        <div className="w-full px-4 md:px-16 min-[375px]:px-6 lg:px-fluid-16-64">
+          <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 lg:gap-12 lg:mt-6 max-w-[40ch]">
+            <h2 className="leading-normal">We partner with businesses at every stage.</h2>
+            <p className="leading-normal">          
+              Whether you're a startup exploring innovative possibilities or an established enterprise looking to expand your market reach, we have the expertise to bring your vision to life. Our team combines technical excellence with genuine passion for transforming ideas into impactful solutions. 
+              <br/><br/>
+              Ready to discuss your next project? Let's connect for a no-obligation consultation.
+            </p>
+          </div>
+          <div className="w-full flex justify-end items-center mt-10 md:mt-16 xl:mt-20">
+            <HighlightLink name="Contact" href="/contact"/>
+          </div>
+        </div>  
       </div>
     </div>
   );
