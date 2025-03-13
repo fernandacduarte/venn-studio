@@ -1,3 +1,4 @@
+'use client'
 import Carousel from "react-spring-3d-carousel";
 import { useState, useEffect } from "react";
 import { IconChevronCompactLeft } from "@tabler/icons-react";
