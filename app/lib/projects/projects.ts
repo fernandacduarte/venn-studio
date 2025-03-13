@@ -27,7 +27,9 @@ Learn more by visiting [theringai.xyz](https://theringai.xyz).
         logo: "/images/projects/csf/logo.svg",
         subtitle: "Estimating economic damage to the Amazon",
         images: [
-                "/images/projects/the-ring-ai/the-ring-ai-promo-1.png"
+                "/images/projects/csf/deforestation-calculator/promo_1.png",
+                "/images/projects/csf/deforestation-calculator/promo_2.png",
+                "/images/projects/csf/deforestation-calculator/promo_3.png",
         ],
         slug: "deforestation-calculator-amazon-damage-estimation-tool",
         description: `Deforestation in the Amazon is a critical environmental issue that leads not only to severe biodiversity loss, disruption of ecosystems, and increased carbon concentration in the atmosphere, but also threatens indigenous communities livelyhoods. The Amazon plays a crucial role in regulating global weather patterns and storing carbon, making its preservation essential for planetary health. Urgent action is needed to enforce conservation policies, promote sustainable land use, and curb deforestation to protect this vital ecosystem.
