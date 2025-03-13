@@ -164,6 +164,22 @@ const slides = [
   }
 ]
 
+const carouselSwipeableSettings = {
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  centerMode: true,
+  responsive: [
+      {
+        breakpoint: 436,
+        settings: {
+          centerMode: false
+        }
+      }
+  ]
+};
+
 const AboutPage = () => {
   return (
     <div className="animate-fadeIn w-full flex gap-6 flex-grow items-stretch text-xl md:text-2xl lg:text-[30px]">
@@ -234,7 +250,7 @@ const AboutPage = () => {
 
           {/* mobile slide */}
           <div className="mt-10 w-full overflow-hidden md:hidden">
-            <CarouselSwipeable showNavigation>
+            <CarouselSwipeable settings={carouselSwipeableSettings} showNavigation>
               <div className="px-2">
                 <Card
                   key={'card-0'}
