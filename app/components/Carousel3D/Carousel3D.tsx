@@ -52,7 +52,7 @@ export default function Carousel3D ({
     return (
         <div className={`relative ${className}`}>
             {showArrows &&
-                <div className="w-full mx-w-[1024px] absolute top-0 -translate-y-full left-0 right-0 mx-auto flex justify-between text-foreground">
+                <div className="w-full mx-w-[1024px] absolute top-0 -translate-y-full left-0 right-0 mx-auto flex justify-between text-foreground md:px-16 min-[375px]:px-6 px-4 lg:px-fluid-16-64">
                     <button 
                     className="hover:scale-105 active:scale-95 transition-transform"
                     onClick={() => setGoToSlide(prev => wrap(prev, slides.length, "prev"))}

@@ -4,13 +4,12 @@ import styles from './page.module.css'
 import { BackgrounSVG } from "./graphics";
 // import { Carousel } from "react-responsive-3d-carousel";
 // import Carousel from 'react-spring-3d-carousel';
-import 'react-responsive-3d-carousel/dist/styles.css';
 import { IconBlockchain, IconAI } from "@/app/components/Icons/Icons";
 import HighlightLink from "@/app/components/HighlightLink/HighlightLink";
 import Carousel3D from "@/app/components/Carousel3D/Carousel3D";
 // import CarouselSwipeable from "@/app/components/CarouselSwipeSlider/CarouselSwipeSlider";
 import CarouselSwipeable from "@/app/components/CarouselSwipeable/CarouselSwipeable";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 
 // highlight color: #D3EF8A
 
@@ -79,38 +78,38 @@ function Card ({
   )
 }
 
-const carouselItems = [
-  <Card
-    key={'card-0'}
-    icon={<div className="text-[135px] md:text-[150px] lg:text-[180px]"><IconStackFront size={'1em'}/></div>}
-    title="Full-Stack Development"
-    description="We craft end-to-end web solutions, handling everything from frontend aesthetics to backend logic."
-  />,
-  <Card
-    key={'card-1'}
-    icon={<div className="text-[72px] md:text-[80px] lg:text-[96px]"><IconTable size={'1em'} stroke={2}/></div>}
-    title="UI/UX Design"
-    description="Our design team creates user-friendly interfaces that are not only visually appealing but also intuitive and engaging, making every interaction count."
-  />,
-  <Card
-    key={'card-2'}
-    icon={<IconAI className="w-[72px] md:w-[80px] lg:w-[96px]"/>}
-    title={"AI tools"}
-    description="We integrate cutting-edge AI models to supercharge your product, with everything tailored precisely to your use case."
-  />,
-  <Card
-    key={'card-3'}
-    icon={<IconBlockchain className="w-[82px] md:w-[91px] lg:w-[110px]"/>}
-    title="Blockchain Integration"
-    description="Evaluating blockchain for your product? We help businesses make the right call, then build it right—using industry-leading Web3 tools and protocols."
-  />,
-  <Card
-    key={'card-4'}
-    icon={<div className="text-[72px] md:text-[80px] lg:text-[96px]"><IconUserStar size={'1em'}/></div>}
-    title="Customized products"
-    description="We tailor our services to your specific needs, ensuring that every project is built to fit your goals, budget, and timeline."
-  />
-]
+// const carouselItems = [
+//   <Card
+//     key={'card-0'}
+//     icon={<div className="text-[135px] md:text-[150px] lg:text-[180px]"><IconStackFront size={'1em'}/></div>}
+//     title="Full-Stack Development"
+//     description="We craft end-to-end web solutions, handling everything from frontend aesthetics to backend logic."
+//   />,
+//   <Card
+//     key={'card-1'}
+//     icon={<div className="text-[72px] md:text-[80px] lg:text-[96px]"><IconTable size={'1em'} stroke={2}/></div>}
+//     title="UI/UX Design"
+//     description="Our design team creates user-friendly interfaces that are not only visually appealing but also intuitive and engaging, making every interaction count."
+//   />,
+//   <Card
+//     key={'card-2'}
+//     icon={<IconAI className="w-[72px] md:w-[80px] lg:w-[96px]"/>}
+//     title={"AI tools"}
+//     description="We integrate cutting-edge AI models to supercharge your product, with everything tailored precisely to your use case."
+//   />,
+//   <Card
+//     key={'card-3'}
+//     icon={<IconBlockchain className="w-[82px] md:w-[91px] lg:w-[110px]"/>}
+//     title="Blockchain Integration"
+//     description="Evaluating blockchain for your product? We help businesses make the right call, then build it right—using industry-leading Web3 tools and protocols."
+//   />,
+//   <Card
+//     key={'card-4'}
+//     icon={<div className="text-[72px] md:text-[80px] lg:text-[96px]"><IconUserStar size={'1em'}/></div>}
+//     title="Customized products"
+//     description="We tailor our services to your specific needs, ensuring that every project is built to fit your goals, budget, and timeline."
+//   />
+// ]
 
 const slides = [
   {
@@ -169,12 +168,12 @@ const AboutPage = () => {
   return (
     <div className="animate-fadeIn w-full flex gap-6 flex-grow items-stretch text-xl md:text-2xl lg:text-[30px]">
       {/* <div className="h-full w-full flex flex-col gap-10 flex-grow rounded-3xl p-10 bg-neutralDark text-neutralLight-100"> */}
-      <div className="h-full w-full max-w-screen-2xl mx-auto md:px-16 min-[375px]:px-6 px-4 lg:px-fluid-16-64 flex flex-col gap-16 flex-grow mt-2">
+      <div className="h-full w-full max-w-screen-2xl mx-auto flex flex-col gap-16 flex-grow mt-2">
         {/* <div> */}
           {/* <span className="text-4xl font-extrabold">About us</span> */}
           {/* <span className="text-lg font-bold tracking-[0.035em]">ABOUT US</span> */}
         {/* </div> */}
-        <div className="flex flex-col gap-6 max-w-[30ch] mt-10">
+        <div className="flex flex-col gap-6 max-w-[30ch] mt-10 md:px-16 min-[375px]:px-6 px-4 lg:px-fluid-16-64">
           {/* <Link href="/"><div className="w-full flex gap-1 opacity-70"><IconArrowLeft strokeWidth={1.5}/><span className="font-semibold">Back</span></div></Link> */}
           <h2 className="leading-normal">
             We turn startup visions into <span className={`${styles.intro__highlight}`}>market-ready MVPs</span> in weeks, not months. 
@@ -183,7 +182,7 @@ const AboutPage = () => {
             Our agile and highly skilled team specializes in helping founders validate their ideas and secure early traction through rapid, production-grade prototypes. From concept to launch, we deliver scalable full-stack solutions that grow with your business. 
           </p>
         </div>
-        <div className="w-full">
+        <div className="w-full md:px-16 min-[375px]:px-6 px-4 lg:px-fluid-16-64">
           <div className="w-full relative px-8 py-20 md:py-28 min-[430px]:px-12 flex items-center justify-end bg-neutralDark rounded-3xl text-background overflow-hidden">
             <div className="w-full h-full absolute right-[50%] lg:right-[55%] xl:right-[50%] top-0 flex items-center justify-center opacity-70 animate-swingX">
               <div className="w-full h-full flex items-center justify-center animate-slowRotate opacity-30 lg:opacity-100">
@@ -206,7 +205,7 @@ const AboutPage = () => {
             </div>
           </div>          
         </div>
-        <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 lg:gap-12 lg:mt-6 max-w-[40ch]">
+        <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 lg:gap-12 lg:mt-6 max-w-[40ch] md:px-16 min-[375px]:px-6 px-4 lg:px-fluid-16-64">
           <h2 className="leading-normal">Have a game-changing idea? Skip the big agencies</h2>
           <p className="leading-normal">
             Our lean team works directly with founders to validate concepts and ship MVPs fast. Through rapid iteration and ruthless prioritization, we deliver products that users love and investors notice—without the overhead and complexity of large agencies. We're built for startups who need beautiful, functional products—without burning runway.
@@ -221,11 +220,15 @@ const AboutPage = () => {
           height="500px"
           showStatus={false}
           /> */}
+
+          {/* tablet desktop slide */}
           <Carousel3D 
           className="w-full max-w-[1024px] h-[400px] md:h-[500px] lg:h-[600px] mx-auto hidden md:block"
           slides={slides}
           showArrows
           />
+
+          {/* mobile slide */}
           <div className="mt-10 w-full overflow-hidden md:hidden">
             <CarouselSwipeable showNavigation>
               <div className="px-2">
@@ -332,7 +335,7 @@ const AboutPage = () => {
 
           </div> */}
         </div>
-        <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 lg:gap-12 lg:mt-6 max-w-[40ch]">
+        <div className="flex flex-col gap-6 sm:gap-8 md:gap-10 lg:gap-12 lg:mt-6 max-w-[40ch] md:px-16 min-[375px]:px-6 px-4 lg:px-fluid-16-64">
           <h2 className="leading-normal">We partner with businesses at every stage.</h2>
           <p className="leading-normal">          
             Whether you're a startup exploring innovative possibilities or an established enterprise looking to expand your market reach, we have the expertise to bring your vision to life. Our team combines technical excellence with genuine passion for transforming ideas into impactful solutions. 
@@ -340,7 +343,7 @@ const AboutPage = () => {
             Ready to discuss your next project? Let's connect for a no-obligation consultation.
           </p>
         </div>
-        <div className="w-full flex justify-end items-center mt-10 md:mt-16 xl:mt-20">
+        <div className="w-full flex justify-end items-center mt-10 md:mt-16 xl:mt-20 md:px-16 min-[375px]:px-6 px-4 lg:px-fluid-16-64">
           <HighlightLink name="Contact" href="/contact"/>
         </div>
       </div>
