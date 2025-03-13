@@ -7,9 +7,9 @@ export const projects: ProjectMetadata[] = [
         logo: "/images/projects/the-ring-ai/logo.svg",
         subtitle: "One generative AI app to rule them all!!",        
         images: [
-                "/images/projects/the-ring-ai/promo_1.png",
-                "/images/projects/the-ring-ai/promo_2.png",
-                "/images/projects/the-ring-ai/promo_3.png"
+                "/images/projects/the-ring-ai/promo_1.webp",
+                "/images/projects/the-ring-ai/promo_2.webp",
+                "/images/projects/the-ring-ai/promo_3.webp"
         ],
         slug: 'the-ring-ai-generative-ai-world-app',
         description: `The World project is building a global financial and identity network powered by proof of personhood. At its core is World App, a simple crypto wallet through which verified users receive UBI payments in WLD, the associated token of the project. Within World App, mini-apps extend functionality by offering integrated services through an app store.
@@ -27,9 +27,9 @@ Learn more by visiting [theringai.xyz](https://theringai.xyz).
         logo: "/images/projects/csf/logo.svg",
         subtitle: "Estimating economic damage to the Amazon",
         images: [
-                "/images/projects/csf/deforestation-calculator/promo_1.png",
-                "/images/projects/csf/deforestation-calculator/promo_2.png",
-                "/images/projects/csf/deforestation-calculator/promo_3.png",
+                "/images/projects/csf/deforestation-calculator/promo_1.webp",
+                "/images/projects/csf/deforestation-calculator/promo_2.webp",
+                "/images/projects/csf/deforestation-calculator/promo_3.webp",
         ],
         slug: "deforestation-calculator-amazon-damage-estimation-tool",
         description: `Deforestation in the Amazon is a critical environmental issue that leads not only to severe biodiversity loss, disruption of ecosystems, and increased carbon concentration in the atmosphere, but also threatens indigenous communities livelyhoods. The Amazon plays a crucial role in regulating global weather patterns and storing carbon, making its preservation essential for planetary health. Urgent action is needed to enforce conservation policies, promote sustainable land use, and curb deforestation to protect this vital ecosystem.
