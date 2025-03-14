@@ -39,11 +39,52 @@ export default function Carousel3D ({
 } : Carousel3DProps) {
     const table = slides.map((element, index) => {
         return { ...element, onClick: () => setGoToSlide(index) };
-      });
+    });
     
     const [current, setCurrent] = useState(0)
     const [goToSlide, setGoToSlide] = useState<number>(0);
     const [cards] = useState(table);
+    const [touchStart, setTouchStart] = useState<number | null>(null);
+    const [touchEnd, setTouchEnd] = useState<number | null>(null);
+    const [touchStartTime, setTouchStartTime] = useState<number>(0);
+
+    // Minimum swipe distance and velocity thresholds
+    const minSwipeDistance = 50;
+    const minSwipeVelocity = 0.5; // pixels per millisecond
+
+    useEffect(() => setCurrent(goToSlide), [goToSlide]);
+
+    const onTouchStart = (e: React.TouchEvent) => {
+        setTouchEnd(null);
+        setTouchStart(e.targetTouches[0].clientX);
+        setTouchStartTime(Date.now());
+    };
+
+    const onTouchMove = (e: React.TouchEvent) => {
+        setTouchEnd(e.targetTouches[0].clientX);
+    };
+
+    const onTouchEnd = () => {
+        if (!touchStart || !touchEnd) return;
+
+        const distance = touchStart - touchEnd;
+        const duration = Date.now() - touchStartTime;
+        const velocity = Math.abs(distance) / duration;
+
+        // Check if swipe meets distance and velocity thresholds
+        if (Math.abs(distance) >= minSwipeDistance && velocity >= minSwipeVelocity) {
+            if (distance > 0) {
+                // Swipe left, go to next slide
+                setGoToSlide(prev => wrap(prev, slides.length, "next"));
+            } else {
+                // Swipe right, go to previous slide
+                setGoToSlide(prev => wrap(prev, slides.length, "prev"));
+            }
+        }
+
+        setTouchStart(null);
+        setTouchEnd(null);
+    };
 
     useEffect(() => setCurrent(goToSlide), [goToSlide]);
 
@@ -67,7 +108,11 @@ export default function Carousel3D ({
                     </button>
                 </div>
             }
-            <div className="w-full h-full ">
+            <div className="w-full h-full"
+            onTouchStart={onTouchStart}
+            onTouchMove={onTouchMove}
+            onTouchEnd={onTouchEnd}            
+            >
                 <Carousel
                 slides={cards}
                 goToSlide={goToSlide}
