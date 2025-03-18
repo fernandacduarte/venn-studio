@@ -32,7 +32,12 @@ const ContactPage = () => {
           </p> */}
         </div>
         <div className="flex flex-col gap-4 md:gap-6 lg:gap-8 max-w-[30ch]">
-          <span className={`font-bold w-fit ${styles.email__highlight}`}>contact@vennstudio.dev</span>
+          <a 
+          className={`font-bold w-fit ${styles.email__highlight}`}
+          href='mailto:contact@vennstudio.dev'
+          >
+            contact@vennstudio.dev
+          </a>
           <span className='text-lg md:text-xl lg:text-2xl'>
             CNPJ: 56.056.578/0001-14
             <br/>
