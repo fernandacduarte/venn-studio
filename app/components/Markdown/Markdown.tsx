@@ -11,7 +11,16 @@ export default function Markdown ({ children }: { children: string }) {
             em: ({ children }) => (
                 <span className="font-medium opacity-60">{children}</span>
             ),
-            a: ({ children }) => <a className='font-medium transition-all hover:underline'>{children}</a>,
+            a: ({ children, href }) => (
+                <a 
+                className='font-medium transition-all hover:underline'
+                href={href}
+                target='_blank'
+                rel='noopener noreferrer'
+                >
+                    {children}                
+                </a>
+            ),
             ul: ({ children }) => (
                 <ul className="font-light pl-4 mb-6 last:mb-0 [&>li]:before:content-['-'] [&>li]:before:mr-2 [&>li]:flex">{children}</ul>
 
