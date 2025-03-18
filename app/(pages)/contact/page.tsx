@@ -17,7 +17,7 @@ const ContactPage = () => {
           {/* <p className='leading-normal'>Ready to discuss your next project? Let's connect for a no-obligation consultation.</p> */}
         </div>
         <div className='w-full flex flex-col flex-1 gap-10 justify-center items-center md:mt-6'>
-          <p className='leading-normal max-w-[30ch] text-center'>Ready to discuss your next project? Let's connect for a no-obligation consultation.</p>
+          <p className='leading-normal max-w-[30ch] text-center'>Ready to discuss your next project? Let's connect for a consultation. No strings attached!</p>
           <div className='flex flex-col gap-6 items-center'>
             <div className='flex gap-2 items-center'><AvailableNowIcon/><span className='text-xs md:text-sm lg:text-base font-semibold opacity-70'>Slots availabe</span></div>
             <a className={`flex gap-5 justify-center items-start px-10 py-6 bg-foreground text-background rounded-2xl ${styles.button}`}
