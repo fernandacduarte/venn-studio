@@ -37,10 +37,18 @@ const TeamsPage = () => {
               <h2>Bernardo Franceschin</h2>
               <span className='text-base md:text-lg xl:text-[22px] font-light'>Founding member, full-stack developer, smart contract engineer.</span>
               <div className='w-full flex justify-start gap-8 py-2 md:py-4'>
-                <a href="" className='w-6 text-[1.5rem] md:text-[1.75rem] xl:text-[2rem] opacity-70 hover:opacity-100'>
+                <a className='w-6 text-[1.5rem] md:text-[1.75rem] xl:text-[2rem] opacity-70 hover:opacity-100'
+                href="https://www.linkedin.com/in/bernardo-bianchi-franceschin-702543234/"
+                target="_blank"
+                rel="noopener noreferer"
+                >
                   <IconBrandLinkedin size={'1em'}/>
                 </a>
-                <a href="" className='w-6 text-[1.5rem] md:text-[1.75rem] xl:text-[2rem] opacity-70 hover:opacity-100'>
+                <a className='w-6 text-[1.5rem] md:text-[1.75rem] xl:text-[2rem] opacity-70 hover:opacity-100'
+                href="https://x.com/bfranceschin1"
+                rel="noopener noreferrer"
+                target="_blank"
+                >
                   <IconBrandX size={'1em'}/>
                 </a>
               </div>
@@ -69,10 +77,18 @@ const TeamsPage = () => {
               <h2>Pedro Franceschin</h2>
               <span className='text-base md:text-lg xl:text-[22px] font-light'>Founding member, full-stack developer, smart contract engineer.</span>
               <div className='w-full flex justify-start gap-8 py-2 md:py-4'>
-                <a href="" className='w-6 text-[1.5rem] md:text-[1.75rem] xl:text-[2rem] opacity-70 hover:opacity-100'>
+                <a className='w-6 text-[1.5rem] md:text-[1.75rem] xl:text-[2rem] opacity-70 hover:opacity-100'
+                href="https://www.linkedin.com/in/pedro-franceschin-16278015b/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
                   <IconBrandLinkedin size={'1em'}/>
                 </a>
-                <a href="" className='w-6 text-[1.5rem] md:text-[1.75rem] xl:text-[2rem] opacity-70 hover:opacity-100'>
+                <a className='w-6 text-[1.5rem] md:text-[1.75rem] xl:text-[2rem] opacity-70 hover:opacity-100'
+                href="https://x.com/pbfranceschin"
+                rel="noopener noreferrer"
+                target="_blank"
+                >
                   <IconBrandX size={'1em'}/>
                 </a>
               </div>
@@ -101,10 +117,18 @@ const TeamsPage = () => {
               <h2>Fernanda Duarte</h2>
               <span className='text-base md:text-lg xl:text-[22px] font-light'>Founding member, front-end developer, ux/ui engineer, designer.</span>
               <div className='w-full flex justify-start gap-8 py-2 md:py-4'>
-                <a href="" className='w-6 text-[1.5rem] md:text-[1.75rem] xl:text-[2rem] opacity-70 hover:opacity-100'>
+                <a className='w-6 text-[1.5rem] md:text-[1.75rem] xl:text-[2rem] opacity-70 hover:opacity-100'                
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                >
                   <IconBrandLinkedin size={'1em'}/>
                 </a>
-                <a href="" className='w-6 text-[1.5rem] md:text-[1.75rem] xl:text-[2rem] opacity-70 hover:opacity-100'>
+                <a className='w-6 text-[1.5rem] md:text-[1.75rem] xl:text-[2rem] opacity-70 hover:opacity-100'
+                href="https://x.com/nandawebdev"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
                   <IconBrandX size={'1em'}/>
                 </a>
               </div>
