@@ -10,7 +10,7 @@ export default function CommingSoon () {
             loading="eager"
             />
             <div className="relative z-10 w-full h-full flex items-center justify-center px-4">
-                <div className="translate-y-1/3 flex flex-col gap-6">
+                <div className="lg:translate-y-1/3 flex flex-col gap-6">
                     <div className="flex gap-4 mx-auto">
                         <img
                         src="/images/venn-logo2.svg"
